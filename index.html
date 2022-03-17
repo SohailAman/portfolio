@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./css/portifolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/ac5c58246a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+</head>
+
+<body onload="lood()">
+
+    <!-- Navbar-Scroll-->
+    <nav class="navbar navbar-expand-lg px-3" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                SOHAIL
+            </a>
+            <button class="navbar-toggler h6 p-2 ms-auto" style="z-index: 999;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars text-white h6 m-0"></span>
+          </button>
+            <div class="collapse-xsm navbar-collapse mx-auto" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-5 ms-auto d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" aria-current="page" href="#home" data-replace="Home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" href="#about" data-replace="About">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" href="#skills" data-replace="Skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" href="#services" data-replace="Services">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" href="#portifolio" data-replace="Portifolio">
+                            <span>Portifolio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link hovChg d-flex px-4 text-light" href="#contact" data-replace="Contact">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar-Scroll-End-->
+
+
+    <!-- Menu-Scroll -->
+    <main class="site-wrapper position-relative">
+
+        <button id="scrollNav" class="table-icon">
+            <span id="spn1" class="spn1 ms-auto"></span>
+            <span id="spnMid" class="spnMid mx-auto"></span>
+            <span id="spn2" class="spn2 mx-auto"></span>
+         </button>
+
+        <div class="pt-table pt-none desktop-768" id="scrollMenu">
+            <div class="pt-tablecell page-home relative" style="background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+          background-position: center;
+          background-size: cover;">
+                <div class="overlay"></div>
+
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                            <div class="hexagon-menu clear">
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#home">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-universal-access"></i>
+                                                      </span>
+                                        <span class="title text-danger">Welcome</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#about">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-circle-info"></i>
+                                                      </span>
+                                        <span class="title">About</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#services">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-braille"></i>
+                                                      </span>
+                                        <span class="title">Services</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#portifolio">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-id-badge"></i>
+                                                      </span>
+                                        <span class="title">Portifolio</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#skills">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-life-ring"></i>
+                                                      </span>
+                                        <span class="title">Skills</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#home">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-clipboard"></i>
+                                                      </span>
+                                        <span class="title text-danger">My Page</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a class="hex-content" href="#contact">
+                                        <span class="hex-content-inner">
+                                                      <span class="icon">
+                                                          <i class="fa fa-map-signs"></i>
+                                                      </span>
+                                        <span class="title">Contact</span>
+                                        </span>
+                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Menu-Scroll-End -->
+
+
+    <!-- Small Screen Nav -->
+    <section class="smallNav wow slideInLeft">
+        <button id="smNavBtn" class="smallNavBtn">
+        <i class="fa fa-bars text-danger"></i>
+    </button>
+        <ul class="navbar-nav" id="smMenu">
+            <li class="nav-item py-2 position-relative">
+                <a href="#home" class="nav-link d-flex align-items-center">
+                    <i class="fa fa-home ico pe-2"></i>
+                    <span class="dis">Home</span></a>
+            </li>
+            <li class="nav-item py-2 position-relative">
+                <a href="#skills" class="nav-link d-flex align-items-center">
+                    <i class="fa fa-life-ring ico pe-2"></i>
+                    <span class="dis">Skills</span></a>
+            </li>
+            <li class="nav-item py-2 position-relative">
+                <a href="#services" class="nav-link d-flex align-items-center">
+                    <i class="fa-brands fa-buffer ico pe-2"></i>
+                    <span class="dis">Services</span></a>
+            </li>
+            <li class="nav-item py-2 position-relative">
+                <a href="#portifolio" class="nav-link d-flex align-items-center">
+                    <i class="fa fa-id-badge ico pe-2"></i>
+                    <span class="dis">Portifolio</span></a>
+            </li>
+            <li class="nav-item py-2 position-relative">
+                <a href="#about" class="nav-link d-flex align-items-center">
+                    <i class="fa fa-circle-info ico pe-2"></i>
+                    <span class="dis">About</span></a>
+            </li>
+            <li class="nav-item py-2 position-relative">
+                <a href="#contact" class="nav-link d-flex align-items-center">
+                    <i class="fa fa-phone ico pe-2"></i>
+                    <span class="dis">Contact</span></a>
+            </li>
+        </ul>
+    </section>
+    <!-- Small Screen Nav End -->
+
+    <!-- Header Sec -->
+    <section class="heroSec" id="home">
+        <div class="note wow slideInRight">
+            <div class="upper">
+                <h3 class="text-center hi">Hi There!</h3>
+                <h1>I'M SOHAIL AMAN</h1>
+            </div>
+            <div class="container p-0">
+                <p>a
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </p>
+            </div>
+            <div class="hire mx-auto text-center position-relative">
+                <p class="text-light h4">Hire Me</p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="https://www.fiverr.com/users/sohailaman121/seller_dashboard">
+                        <div class="circle">
+                            <img class="imageee" src="./assets/images/fiverr.png" alt="" width="100%">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="circle">
+                            <img class="imageee" src="./assets/images/upwork.png" alt="" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Sec End -->
+
+    <!-- About Sec -->
+    <section class="aboutSec mx-0 px-5 my-5 text-center d-flex align-items-center justify-content-center" id="about">
+        <div class="container p-0 aboutCont">
+            <h1 class="wow slideInLeft mb-3 w-100 aboutHeader">ABOUT</h1>
+            <div class="row mx-0 d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-md-3 sol-sm-3 col-xs-3 d-flex align-items-center justify-content-start about-right">
+                    <div class="image-one me-auto">
+                        <img src="./assets/images/about.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 sol-sm-7 col-xs-10 d-flex align-items-center textAbout">
+                    <p class="wow slideInRight mt-4 position-relative aboutTxt">
+                        <i class="fa-solid fa-quote-left fa-2x text-danger"></i> Innovative Front End Developer with 5 years experience building and maintaining responsive websites in the recruiting industry. Proficient in HTML, CSS, Bootstrap, JavaScript
+                        and ReactJs; plus modern libraries and frameworks. Passionate about usability and possess working knowledge of Adobe Photoshop & Sketch.
+                        <i class="fa-solid fa-quote-right fa-2x text-danger"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Sec End  -->
+
+    <!-- Skills Sec -->
+    <section class="skillSec position-relative" id="skills">
+
+        <div class="container pt-5">
+            <h2 class="text-center skillHead my-5 wow slideInLeft">SKILL</h2>
+            <div class="row m-0">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/HTML.png" />
+                            <h1 class="swiper-caption">HTML</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/CSS.png" />
+                            <h1 class="swiper-caption">CSS</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Bootstrap.png" />
+                            <h1 class="swiper-caption">Bootstrap</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/JS.png" />
+                            <h1 class="swiper-caption">JS</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/React.png" />
+                            <h1 class="swiper-caption">ReactJS</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="skillPer py-5">
+            <div class="perContainer">
+                <div class="fillmult" data-width="90%">
+                    <span><b>HTML</b></span>
+                </div>
+            </div>
+            <div class="perContainer">
+                <div class="fillmult" data-width="88%">
+                    <span><b>CSS</b></span>
+                </div>
+            </div>
+            <div class="perContainer">
+                <div class="fillmult" data-width="88%">
+                    <span><b>Bootstrap</b></span>
+                </div>
+            </div>
+            <div class="perContainer">
+                <div class="fillmult" data-width="80%">
+                    <span><b>JS</b></span>
+                </div>
+            </div>
+            <div class="perContainer">
+                <div class="fillmult" data-width="70%">
+                    <span><b>REACT</b></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Details -->
+        <div class="btn-skillDets d-flex  justify-content-center mt-5 wow slideInUp.com">
+            <button class="effect effect-5 p-2" id="skillDets1" title="Learn More">Learn More</button>
+            <button class="effect effect-6 p-2" id="skillDets2" title="Show Less More">Show Less</button>
+        </div>
+        <div class="skillDetail py-5" id="sklillDet-menu">
+            <p class="text-center text-secondary">These are the programming languages and frameworks that I use in my projects.</p>
+
+            <div class="row m-0 d-flex align-items-center justify-content-center">
+                <div class="html my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
+                    <h4 class="detsHead">HTML5</h4>
+                    <hr>
+                    <p class="skillDet-txt mt-2">
+                        <b>HyperText Markup Language</b>, commonly abbreviated as HTML, is the standard markup language used to create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology used to create web pages, as well as to
+                        create user interfaces for mobile and web applications.
+                    </p>
+                </div>
+                <div class="css my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
+                    <h4 class="detsHead">CSS3</h4>
+                    <hr>
+                    <p class="skillDet-txt mt-2">
+                        <b>Cascading Style Sheets (CSS)</b> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written
+                        in HTML, the language can be applied to any XML document.
+                    </p>
+                </div>
+                <div class="js my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
+                    <h4 class="detsHead">JAVASCRIPT</h4>
+                    <hr>
+                    <p class="skillDet-txt mt-2">
+                        <b>JavaScript</b> is a high-level, dynamic, untyped, and interpreted programming language. Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production; the majority of websites employ it
+                        and it is supported by all modern Web browsers without plug-ins.
+                    </p>
+                </div>
+                <div class="js my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
+                    <h4 class="detsHead">REACT</h4>
+                    <hr>
+                    <p class="skillDet-txt mt-2">
+                        free <b>React</b> (also known as ReactJS) is a and oe front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+                        React can be used as a base in the development of single-page or mobile applications.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Skill Sec End -->
+
+    <!-- Services Sec -->
+    <section class="section-services" id="services">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="header-section">
+                        <h2 class="title wow slideInLeft">Exclusive <span>Services</span></h2>
+                        <p class="description wow slideInRight">
+                            These Are The Services We Offer!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service wow slideInLeft">
+                        <div class="part-1">
+                            <i class="bi bi-pc-display"></i>
+                            <h3 class="title">
+                                HTML & CSS Responsive Web Design
+                            </h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description">
+                                I can design fully responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service wow slideInUp">
+                        <div class="part-1">
+                            <i class="fa fa-mobile"></i>
+                            <h3 class="title">
+                                PSD to Bootstrap
+                            </h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description">
+                                I can convert PSD, Sketch, Ai, and Adobe XD files into pixel-perfect standards that are compliant with HTML5/CSS3/Bootstrap5 templates
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service wow slideInRight">
+                        <div class="part-1">
+                            <i class="fa-brands fa-js-square"></i>
+                            <h3 class="title">
+                                Javascript Development
+                            </h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description">
+                                Use JavaScript to build dynamic and responsive websites.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service wow slideInLeft">
+                        <div class="part-1">
+                            <i class="fa-brands fa-react"></i>
+                            <h3 class="title">
+                                React JS Development
+                            </h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description">
+                                ReactJS is renowned for its extensibility, adjustability, and convenience. I can create amazing websites using ReactJS.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service wow slideInRight">
+                        <div class="part-1">
+                            <i class="fa fa-shop"></i>
+                            <h3 class="title">
+                                UX/UI Design
+                            </h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description">
+                                I can create UX/UI website designs from scratch or work with ready design mock-ups. I leverage the latest technology to construct user-friendly and efficient interfaces.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Sec End -->
+
+    <!-- Portifolio Sec -->
+    <section class="portSec text-center my-5 py-5" id="portifolio">
+        <h1 class="port-head wow slideInLeft m-5">PORTIFOLIO</h1>
+        <div class="row m-0 d-flex align-items-center justify-content-center px-5">
+
+            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInLeft p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/landPage.png" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">landing Pages</h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-12 p-3 wow slideInDown  p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/responsive.webp" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">Responsive Sites</h2>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInRight p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/dash.png" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">Dash Boards</h2>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInLeft p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/psd conversion.jpg" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">PSD Conversion</h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-12 p-3 wow slideInUp p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/forms.jpg" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">Forms</h2>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInRight p-0">
+                <div class="effect-img">
+                    <div class="port-img">
+                        <img src="./assets/images/attractive.jpg" alt="">
+                    </div>
+                    <h2 class="port-text m-0 py-2 px-3">Attractive</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portifolio Sec End-->
+
+    <!-- Contact Sec -->
+    <section id="contact" class="contact mt-3">
+
+        <h1 class="section-header wow slideInLeft">Contact</h1>
+
+        <div class="contact-wrapper row d-flex align-items-start justify-content-evenly mx-auto">
+
+            <!-- Left contact page -->
+            <div class="col-lg-5 col-md-5 col-xs-5 my-2 wow slideInLeft">
+                <div class="map d-flex align-items-center justify-content-start">
+                    <iframe class="map-loc" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1615.6201041483341!2d74.356644!3d35.91662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc18679d793fc7a0f!2sCode%20Arena!5e0!3m2!1sen!2sus!4v1646842367010!5m2!1sen!2sus" width="100%"
+                        height="440" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Right contact page -->
+            <form id="contact-form" class="wow slideInRight form-horizontal col-lg-5 col-md-5 col-xs-5 my-2" role="form">
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                    </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+                <button class="send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane mb-3">
+                </i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- Contact Sec End -->
+
+    <section class="footer m-0 py-5">
+        <div class="direct-contact-container">
+            <ul class="social-media-list wow slideInRight">
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <hr>
+
+            <ul class="contact-list d-flex justify-content-evenly wow slideInLeft">
+                <li class="list-item m-2"><i class="text-secondary fa fa-map-marker"><span class="contact-text place">GILGIT, Pakistan</span></i></li>
+
+                <li class="list-item m-2"><i class="text-secondary fa fa-phone"><span class="contact-text phone"><a href="tel:+923444321653" title="Give me a call">(+92) 3444321653</a></span></i></li>
+
+                <li class="list-item m-2"><i class="text-secondary fa fa-envelope"><span class="contact-text gmail"><a href="mailto:sohailaman121@gmail.com" title="Send me an email">sohailaman121@gmail.com</a></span></i></li>
+            </ul>
+
+            <div class="copyright wow slideInUp">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+        </div>
+    </section>
+
+    <!-- START LOADER HTML -->
+    <div id="preloader" class="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- END LOADER HTML -->
+
+
+    <!-- Scroll To Top -->
+    <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket"><i></i></a>
+
+
+
+    <!--  -->
+    <!-- LINKS -->
+    <!--  -->
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Animate.CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+
+    <!--Bootstrap JS Bundle -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <script src="./js/port.js"></script>
+
+</body>
+
+</html>
