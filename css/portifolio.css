@@ -15,6 +15,10 @@ body {
     background: #f7f7f7 !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 .anime {
     animation-delay: 2s;
 }
