@@ -929,13 +929,17 @@ html {
 /* smNav */
 
 .smallNavBtn {
+    border: 0;
+    box-shadow: inset 0px 0px 3px 3px rgb(0 0 0 / 25%);
     position: fixed !important;
+    border-radius: 0 4px 4px 4px;
     top: 0;
     left: 0;
     background: transparent;
     color: #ff014f;
     display: none;
     z-index: 9999;
+    font-size: 28px !important;
 }
 
 .smallNav .navbar-nav {
