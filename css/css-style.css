@@ -17,6 +17,10 @@ body {
     color: #767676
 }
 
+ul {
+    list-style: none;
+}
+
 svg {
     fill: currentcolor;
     width: 15px;
@@ -684,6 +688,12 @@ body.light .soh_about {
     float: left;
     margin-bottom: 193px;
     padding-top: 150px;
+}
+
+.soh_about .social .svg {
+    width: 40px;
+    height: 40px;
+    color: #000;
 }
 
 .soh_about .about_inner {
@@ -1587,7 +1597,7 @@ body.light .soh_contact .map_wrap .map-loc {
     color: #000;
 }
 
-.soh_copyright .copyright_inner .social ul {
+.social ul {
     margin: 0;
     padding-left: 0;
     list-style-type: none;
@@ -1595,16 +1605,16 @@ body.light .soh_contact .map_wrap .map-loc {
     top: 4px
 }
 
-.soh_copyright .copyright_inner .social ul li {
+.social ul li {
     margin: 0 20px 0 0;
     display: inline-block
 }
 
-.soh_copyright .copyright_inner .social ul li:last-child {
+.social ul li:last-child {
     margin-right: 0
 }
 
-.soh_copyright .copyright_inner .social ul li a {
+.social ul li a {
     text-decoration: none;
     color: #000;
     position: relative;
@@ -1612,7 +1622,7 @@ body.light .soh_contact .map_wrap .map-loc {
     display: inline-block
 }
 
-.soh_copyright .copyright_inner .social ul li a .first {
+.social ul li a .first {
     position: absolute;
     transform: translateY(100%);
     -webkit-transition: all .3s ease;
@@ -1622,7 +1632,7 @@ body.light .soh_contact .map_wrap .map-loc {
     transition: all .3s ease
 }
 
-.soh_copyright .copyright_inner .social ul li a .second {
+.social ul li a .second {
     position: relative;
     display: block;
     -webkit-transition: all .3s ease;
@@ -1632,15 +1642,15 @@ body.light .soh_contact .map_wrap .map-loc {
     transition: all .3s ease
 }
 
-.soh_copyright .copyright_inner .social ul li a:hover .first {
+.social ul li a:hover .first {
     transform: translateY(0)
 }
 
-.soh_copyright .copyright_inner .social ul li a:hover .second {
+.social ul li a:hover .second {
     transform: translateY(-100%)
 }
 
-.soh_copyright .copyright_inner .social .svg {
+.social .svg {
     color: #000;
     width: 17px;
     height: 17px
@@ -2629,6 +2639,17 @@ body.dark .soh_settings .cursor li .svg,
     .soh_mobile_menu .topbar_inner .bigger .topbar_in svg {
         width: 14vh;
         height: 12vh;
+    }
+}
+
+@media (max-width:520px) {
+    .soh_about .social .svg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .soh_about .social h5 {
+        font-size: 20px !important;
     }
 }
 

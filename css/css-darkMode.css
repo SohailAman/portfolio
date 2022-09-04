@@ -202,6 +202,12 @@ body.dark .soh_skillSwiper ul li .svg {
     color: #fff
 }
 
+body.dark .soh_about .social .svg {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
 body.dark .soh_portfolio .portfolio_filter .wrapper .trigger {
     background-color: #fff
 }
