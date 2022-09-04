@@ -2,748 +2,1033 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sohail Aman | Web Developer | Portifolio</title>
-    <link rel="shortcut icon" href="./assets/images/fav-icon.jpg">
-    <link rel="stylesheet" href="./css/portifolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Name of your web site">
+    <meta name="author" content="Marketify">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sohail Aman | Front-End Developer | Portfolio</title>
+    <!-- favIco -->
+    <link rel="shortcut icon" href="./images/favIco.png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="css/css-plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/css-colors.css">
+    <link rel="stylesheet" type="text/css" href="css/css-darkMode.css">
+    <link rel="stylesheet" type="text/css" href="css/css-rtl.css">
+    <link rel="stylesheet" type="text/css" href="css/css-style.css">
+    <!--Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- Icon -->
-    <script src="https://kit.fontawesome.com/ac5c58246a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
 </head>
 
-<body onload="lood()">
+<body class="dark" id="mode_chg">
+    <!-- Pre Loader -->
+    <div class="soh_preloader">
+        <div class="spinner_wrap">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- Main Content Wrapper -->
+    <div class="soh_all_wrap" data-magic-cursor="show" data-color="">
+        <!-- Color Setting Box -->
+        <div class="soh_settings">
+            <div class="icon d-flex align-items-center justify-content-center">
+                <img class="svg" src="./images/svg-setting.svg" alt="">
+                <a class="link" href="#"></a>
+            </div>
+            <div class="wrapper">
+                <button class="py-1 d-flex align-items-center mb-2" id="mode_switch">
+                    <img class="me-1" src="./images/sun-8786.svg" alt="">
+                    <img class="ms-1" src="./images/black-and-white-6668.svg" alt="">
+                    <span></span>
+                </button>
 
-    <!-- Navbar-Scroll-->
-    <nav class="navbar navbar-expand-lg px-3" id="nav">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                SOHAIL
-            </a>
-            <button class="navbar-toggler h6 p-2 ms-auto" style="z-index: 999;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars text-white h6 m-0"></span>
-          </button>
-            <div class="collapse-xsm navbar-collapse mx-auto" id="navbarText">
-                <ul class="navbar-nav mb-2 mb-lg-0 me-5 ms-auto d-flex justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" aria-current="page" href="#home" data-replace="Home">
-                            <span>Home</span>
-                        </a>
+                <span class="title">Unlimited Colors</span>
+                <ul class="colors ps-0">
+                    <li>
+                        <a class="blue" href="#"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" href="#about" data-replace="About">
-                            <span>About</span>
-                        </a>
+                    <li>
+                        <a class="green" href="#"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" href="#skills" data-replace="Skills">
-                            <span>Skills</span>
-                        </a>
+                    <li>
+                        <a class="brown" href="#"></a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" href="#services" data-replace="Services">
-                            <span>Services</span>
-                        </a>
+                    <li>
+                        <a class="pink" href="#"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" href="#portifolio" data-replace="Portifolio">
-                            <span>Portifolio</span>
-                        </a>
+                    <li>
+                        <a class="orange" href="#"></a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link hovChg d-flex px-4 text-light" href="#contact" data-replace="Contact">
-                            <span>Contact</span>
-                        </a>
+                    <li class="bl">
+                        <a class="black" href="#"></a>
+                    </li>
+                    <li class="wh">
+                        <a class="white" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="purple" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="sky" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="cadetBlue" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="crimson" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="olive" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="red" href="#"></a>
+                    </li>
+                </ul>
+                <span class="title">Magic Cursor</span>
+                <ul class="cursor ps-1 d-flex align-items-center">
+                    <li>
+                        <a class="showme show" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="hide" href="#"><img class="svg" src="./images/svg-arrow.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <!-- Navbar-Scroll-End-->
 
+        <!-- Navbar -->
+        <div class="soh_topbar">
+            <div class="container">
+                <div class="topbar_inner d-flex align-items-center">
+                    <!-- Svg Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                height="134.000000pt" viewBox="0 0 300.000000 134.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)">
+                                    <path
+                                        d="M1938 1251 c-60 -20 -119 -73 -190 -174 -39 -56 -105 -147 -145 -203 l-73 -101 43 -44 c46 -49 77 -128 76 -195 0 -37 -1 -36 -23 29 -38 113 -114 170 -268 201 -62 13 -154 16 -463 16 -433 0 -439 1 -450 64 -8 39 6 70 38 88 16 10 132 14 463 18 l442 5 102 135 c57 74 107 141 113 148 8 10 -104 11 -559 8 -490 -4 -579 -7 -644 -21 -193 -44 -288 -144 -298 -314 -9 -163 58 -268 208 -326 l75 -29 430 -5 c471 -7 469 -6 481 -66 7 -38 -9 -81 -36 -95 -15 -8 -165 -11 -496 -12 l-475 0 -114 -149 c-63 -81 -115 -149 -115 -151 0 -2 282 -1 627 2 683 6 664 5 784 66 44 22 139 115 139 136 0 6 53 85 118 177 65 91 153 216 196 276 43 61 81 111 86 113 4 2 18 -14 31 -35 13 -21 83 -125 156 -232 73 -106 135 -196 137 -200 2 -3 -107 -4 -242 -3 l-247 4 -105 -143 c-58 -79 -106 -146 -108 -151 -2 -4 298 -9 667 -10 369 -2 671 -2 671 0 0 2 -37 57 -82 122 -46 66 -146 211 -223 322 -464 675 -459 668 -520 704 -50 29 -155 42 -207 25z m190 -50 c43 -22 103 -90 150 -170 14 -25 36 -57 49 -70 12 -14 20 -28 17 -33 -3 -4 -1 -8 4 -8 5 0 25 -24 45 -52 20 -29 55 -80 78 -113 23 -33 61 -88 84 -122 24 -34 50 -70 60 -79 9 -10 15 -27 12 -40 -2 -14 0 -21 7 -18 12 5 27 -15 144 -186 36 -52 81 -116 99 -142 18 -26 33 -50 33 -53 0 -3 -153 -5 -341 -5 -187 1 -343 -1 -346 -4 -3 -3 -14 -1 -25 5 -14 7 -23 7 -34 -2 -18 -15 -32 -3 -16 13 7 7 12 17 12 22 0 6 -7 0 -16 -12 -15 -22 -19 -22 -235 -22 -120 0 -219 3 -219 6 0 7 66 100 123 174 l39 50 242 0 c244 0 266 3 266 37 0 7 -59 100 -131 206 -72 105 -142 208 -156 229 -13 20 -33 44 -44 54 -19 17 -21 17 -44 -7 -27 -27 -287 -392 -362 -508 -26 -41 -71 -98 -99 -126 -86 -88 -206 -115 -509 -116 -99 0 -197 -1 -217 -2 -21 -2 -38 0 -38 3 0 3 -142 4 -315 2 -173 -1 -315 1 -315 6 0 5 31 48 70 96 38 48 70 90 70 94 1 23 18 34 39 23 16 -9 19 -9 16 1 -4 10 79 12 422 10 236 -2 448 0 472 3 30 5 54 16 73 35 24 24 28 36 28 82 -1 52 -16 88 -39 88 -6 0 -10 5 -8 11 1 6 -4 14 -12 17 -8 3 -11 0 -7 -7 9 -14 1 -14 -23 -1 -11 5 -149 10 -325 10 -175 1 -308 6 -311 11 -4 5 -11 9 -17 9 -7 0 -7 -4 0 -12 8 -10 0 -13 -34 -13 -24 0 -44 4 -44 8 0 5 -3 6 -7 4 -5 -3 -39 0 -76 5 -124 17 -224 76 -258 153 -17 37 -17 40 -1 47 14 5 13 7 -5 7 -25 1 -46 52 -24 59 9 3 9 8 1 17 -7 8 -7 15 -1 19 5 3 7 15 4 25 -3 11 2 44 11 74 18 62 72 124 136 157 49 25 156 53 170 45 6 -3 10 1 10 9 0 22 9 20 39 -6 14 -13 19 -15 12 -5 -17 22 -7 34 14 17 8 -7 15 -9 15 -4 0 14 669 9 683 -5 6 -6 15 -11 21 -11 5 0 2 6 -7 13 -14 10 12 12 143 12 100 0 160 -4 160 -10 -1 -5 -38 -57 -83 -115 l-83 -105 -173 -2 c-95 -1 -176 -4 -179 -7 -11 -11 -36 -6 -55 12 -16 13 -19 14 -15 2 5 -13 -20 -15 -194 -12 -225 4 -286 -5 -318 -45 -39 -50 -18 -145 39 -175 20 -10 124 -14 451 -18 l425 -5 -1 -21 c0 -14 4 -20 13 -17 17 7 45 -16 36 -30 -4 -6 -1 -7 7 -2 9 6 3 16 -21 39 -29 27 -31 31 -15 34 11 2 23 -3 28 -12 6 -11 16 -15 30 -10 14 4 18 2 14 -5 -4 -6 0 -11 9 -11 24 0 91 -46 114 -79 12 -16 29 -53 38 -81 30 -94 66 -76 61 30 -4 70 -30 134 -74 181 l-25 26 92 129 c50 71 95 128 100 127 4 -2 6 4 3 12 -3 8 5 25 19 39 14 14 22 27 19 30 -3 3 4 6 16 6 16 0 20 4 15 17 -5 12 -2 15 10 10 12 -4 14 -2 10 10 -5 12 -2 15 10 10 13 -5 17 -1 17 15 0 21 1 21 20 3 15 -13 24 -15 31 -8 8 8 6 11 -6 10 -10 -1 -20 4 -22 11 -3 6 2 12 11 12 9 0 16 4 16 8 0 4 35 7 78 6 58 -1 89 -7 120 -23z" />
+                                    <path
+                                        d="M1185 1190 c-3 -5 -1 -10 4 -10 6 0 11 5 11 10 0 6 -2 10 -4 10 -3 0 -8 -4 -11 -10z" />
+                                    <path
+                                        d="M475 1170 c3 -5 11 -10 16 -10 6 0 7 5 4 10 -3 6 -11 10 -16 10 -6 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M421 1166 c2 -2 15 -9 29 -16 23 -12 24 -12 11 3 -7 10 -20 17 -29 17 -8 0 -13 -2 -11 -4z" />
+                                    <path
+                                        d="M1085 1140 c-3 -5 -1 -10 4 -10 6 0 11 5 11 10 0 6 -2 10 -4 10 -3 0 -8 -4 -11 -10z" />
+                                    <path
+                                        d="M1050 1119 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z" />
+                                    <path d="M1840 1100 c-9 -6 -10 -10 -3 -10 6 0 15 5 18 10 8 12 4 12 -15 0z" />
+                                    <path d="M1030 1096 c0 -2 8 -10 18 -17 15 -13 16 -12 3 4 -13 16 -21 21 -21 13z" />
+                                    <path
+                                        d="M1075 1090 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z" />
+                                    <path
+                                        d="M1002 1038 c21 -32 45 -45 58 -32 8 8 4 10 -12 10 -15 -1 -27 7 -33 22 -5 12 -14 22 -19 22 -4 0 -2 -10 6 -22z" />
+                                    <path
+                                        d="M1030 1051 c0 -6 5 -13 10 -16 6 -3 10 1 10 9 0 9 -4 16 -10 16 -5 0 -10 -4 -10 -9z" />
+                                    <path
+                                        d="M990 1000 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2 0 -4 -4 -4 -10z" />
+                                    <path d="M2290 951 c0 -5 7 -12 16 -15 14 -5 15 -4 4 9 -14 17 -20 19 -20 6z" />
+                                    <path d="M2256 897 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path d="M156 887 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path d="M141 841 c-10 -7 -10 -10 -1 -16 6 -4 16 -3 22 3 13 13 -4 23 -21 13z" />
+                                    <path d="M666 717 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path
+                                        d="M1350 670 l-25 -8 28 -1 c15 -1 27 4 27 9 0 6 -1 10 -2 9 -2 -1 -14 -5 -28 -9z" />
+                                    <path
+                                        d="M650 660 c0 -5 4 -10 9 -10 6 0 13 5 16 10 3 6 -1 10 -9 10 -9 0 -16 -4 -16 -10z" />
+                                    <path
+                                        d="M600 621 c0 -5 5 -13 10 -16 6 -3 10 -2 10 4 0 5 -4 13 -10 16 -5 3 -10 2 -10 -4z" />
+                                    <path
+                                        d="M1230 599 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z" />
+                                    <path
+                                        d="M2545 530 c-3 -5 -1 -10 6 -10 7 0 24 -10 38 -22 21 -19 20 -17 -3 10 -33 36 -33 36 -41 22z" />
+                                    <path
+                                        d="M2595 530 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z" />
+                                    <path
+                                        d="M2514 499 c-3 -6 2 -18 12 -27 17 -16 17 -16 5 0 -7 9 -10 22 -6 28 3 5 4 10 1 10 -3 0 -8 -5 -12 -11z" />
+                                    <path
+                                        d="M2550 490 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10 -4 -10 -10z" />
+                                    <path
+                                        d="M2505 440 c3 -5 11 -10 16 -10 6 0 7 5 4 10 -3 6 -11 10 -16 10 -6 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M2475 380 c-3 -5 1 -10 10 -10 9 0 13 5 10 10 -3 6 -8 10 -10 10 -2 0 -7 -4 -10 -10z" />
+                                    <path d="M369 323 c-13 -16 -12 -17 4 -4 16 13 21 21 13 21 -2 0 -10 -8 -17 -17z" />
+                                    <path
+                                        d="M285 310 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M840 200 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2 0 -4 -4 -4 -10z" />
+                                    <path d="M2185 171 c-3 -5 -2 -12 3 -15 5 -3 9 1 9 9 0 17 -3 19 -12 6z" />
+                                    <path d="M827 154 c-11 -11 3 -24 18 -18 8 4 12 10 9 15 -6 11 -18 12 -27 3z" />
+                                    <path d="M778 133 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <div class="links">
+                            <ul class="anchor_nav">
+                                <li class="current">
+                                    <a href="#home">
+                                        <span class="first">Home</span>
+                                        <span class="second">Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about">
+                                        <span class="first">About</span>
+                                        <span class="second">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#skills">
+                                        <span class="first">Skills</span>
+                                        <span class="second">Skills</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">
+                                        <span class="first">Portfolio</span>
+                                        <span class="second">Portfolio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services">
+                                        <span class="first">Services</span>
+                                        <span class="second">Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact">
+                                        <span class="first">Contact</span>
+                                        <span class="second">Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Menu-Scroll -->
-    <main class="site-wrapper position-relative">
-
-        <button id="scrollNav" class="table-icon">
-            <span id="spn1" class="spn1 ms-auto"></span>
-            <span id="spnMid" class="spnMid mx-auto"></span>
-            <span id="spn2" class="spn2 mx-auto"></span>
-         </button>
-
-        <div class="pt-table pt-none desktop-768" id="scrollMenu">
-            <div class="pt-tablecell page-home relative" style="background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-          background-position: center;
-          background-size: cover;">
-                <div class="overlay"></div>
-
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-                            <div class="hexagon-menu clear">
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#home">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-universal-access"></i>
-                                                      </span>
-                                        <span class="title text-danger">Welcome</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#about">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-circle-info"></i>
-                                                      </span>
-                                        <span class="title">About</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#services">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-braille"></i>
-                                                      </span>
-                                        <span class="title">Services</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#portifolio">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-id-badge"></i>
-                                                      </span>
-                                        <span class="title">Portifolio</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#skills">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-life-ring"></i>
-                                                      </span>
-                                        <span class="title">Skills</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#home">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-clipboard"></i>
-                                                      </span>
-                                        <span class="title text-danger">My Page</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a class="hex-content" href="#contact">
-                                        <span class="hex-content-inner">
-                                                      <span class="icon">
-                                                          <i class="fa fa-map-signs"></i>
-                                                      </span>
-                                        <span class="title">Contact</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                    </a>
+        <!-- Mobile Menu -->
+        <div class="soh_mobile_menu">
+            <div class="topbar_inner">
+                <div class="container bigger">
+                    <div class="topbar_in">
+                        <!-- Svg Logo -->
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                height="134.000000pt" viewBox="0 0 300.000000 134.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)">
+                                    <path
+                                        d="M1938 1251 c-60 -20 -119 -73 -190 -174 -39 -56 -105 -147 -145 -203 l-73 -101 43 -44 c46 -49 77 -128 76 -195 0 -37 -1 -36 -23 29 -38 113 -114 170 -268 201 -62 13 -154 16 -463 16 -433 0 -439 1 -450 64 -8 39 6 70 38 88 16 10 132 14 463 18 l442 5 102 135 c57 74 107 141 113 148 8 10 -104 11 -559 8 -490 -4 -579 -7 -644 -21 -193 -44 -288 -144 -298 -314 -9 -163 58 -268 208 -326 l75 -29 430 -5 c471 -7 469 -6 481 -66 7 -38 -9 -81 -36 -95 -15 -8 -165 -11 -496 -12 l-475 0 -114 -149 c-63 -81 -115 -149 -115 -151 0 -2 282 -1 627 2 683 6 664 5 784 66 44 22 139 115 139 136 0 6 53 85 118 177 65 91 153 216 196 276 43 61 81 111 86 113 4 2 18 -14 31 -35 13 -21 83 -125 156 -232 73 -106 135 -196 137 -200 2 -3 -107 -4 -242 -3 l-247 4 -105 -143 c-58 -79 -106 -146 -108 -151 -2 -4 298 -9 667 -10 369 -2 671 -2 671 0 0 2 -37 57 -82 122 -46 66 -146 211 -223 322 -464 675 -459 668 -520 704 -50 29 -155 42 -207 25z m190 -50 c43 -22 103 -90 150 -170 14 -25 36 -57 49 -70 12 -14 20 -28 17 -33 -3 -4 -1 -8 4 -8 5 0 25 -24 45 -52 20 -29 55 -80 78 -113 23 -33 61 -88 84 -122 24 -34 50 -70 60 -79 9 -10 15 -27 12 -40 -2 -14 0 -21 7 -18 12 5 27 -15 144 -186 36 -52 81 -116 99 -142 18 -26 33 -50 33 -53 0 -3 -153 -5 -341 -5 -187 1 -343 -1 -346 -4 -3 -3 -14 -1 -25 5 -14 7 -23 7 -34 -2 -18 -15 -32 -3 -16 13 7 7 12 17 12 22 0 6 -7 0 -16 -12 -15 -22 -19 -22 -235 -22 -120 0 -219 3 -219 6 0 7 66 100 123 174 l39 50 242 0 c244 0 266 3 266 37 0 7 -59 100 -131 206 -72 105 -142 208 -156 229 -13 20 -33 44 -44 54 -19 17 -21 17 -44 -7 -27 -27 -287 -392 -362 -508 -26 -41 -71 -98 -99 -126 -86 -88 -206 -115 -509 -116 -99 0 -197 -1 -217 -2 -21 -2 -38 0 -38 3 0 3 -142 4 -315 2 -173 -1 -315 1 -315 6 0 5 31 48 70 96 38 48 70 90 70 94 1 23 18 34 39 23 16 -9 19 -9 16 1 -4 10 79 12 422 10 236 -2 448 0 472 3 30 5 54 16 73 35 24 24 28 36 28 82 -1 52 -16 88 -39 88 -6 0 -10 5 -8 11 1 6 -4 14 -12 17 -8 3 -11 0 -7 -7 9 -14 1 -14 -23 -1 -11 5 -149 10 -325 10 -175 1 -308 6 -311 11 -4 5 -11 9 -17 9 -7 0 -7 -4 0 -12 8 -10 0 -13 -34 -13 -24 0 -44 4 -44 8 0 5 -3 6 -7 4 -5 -3 -39 0 -76 5 -124 17 -224 76 -258 153 -17 37 -17 40 -1 47 14 5 13 7 -5 7 -25 1 -46 52 -24 59 9 3 9 8 1 17 -7 8 -7 15 -1 19 5 3 7 15 4 25 -3 11 2 44 11 74 18 62 72 124 136 157 49 25 156 53 170 45 6 -3 10 1 10 9 0 22 9 20 39 -6 14 -13 19 -15 12 -5 -17 22 -7 34 14 17 8 -7 15 -9 15 -4 0 14 669 9 683 -5 6 -6 15 -11 21 -11 5 0 2 6 -7 13 -14 10 12 12 143 12 100 0 160 -4 160 -10 -1 -5 -38 -57 -83 -115 l-83 -105 -173 -2 c-95 -1 -176 -4 -179 -7 -11 -11 -36 -6 -55 12 -16 13 -19 14 -15 2 5 -13 -20 -15 -194 -12 -225 4 -286 -5 -318 -45 -39 -50 -18 -145 39 -175 20 -10 124 -14 451 -18 l425 -5 -1 -21 c0 -14 4 -20 13 -17 17 7 45 -16 36 -30 -4 -6 -1 -7 7 -2 9 6 3 16 -21 39 -29 27 -31 31 -15 34 11 2 23 -3 28 -12 6 -11 16 -15 30 -10 14 4 18 2 14 -5 -4 -6 0 -11 9 -11 24 0 91 -46 114 -79 12 -16 29 -53 38 -81 30 -94 66 -76 61 30 -4 70 -30 134 -74 181 l-25 26 92 129 c50 71 95 128 100 127 4 -2 6 4 3 12 -3 8 5 25 19 39 14 14 22 27 19 30 -3 3 4 6 16 6 16 0 20 4 15 17 -5 12 -2 15 10 10 12 -4 14 -2 10 10 -5 12 -2 15 10 10 13 -5 17 -1 17 15 0 21 1 21 20 3 15 -13 24 -15 31 -8 8 8 6 11 -6 10 -10 -1 -20 4 -22 11 -3 6 2 12 11 12 9 0 16 4 16 8 0 4 35 7 78 6 58 -1 89 -7 120 -23z" />
+                                    <path
+                                        d="M1185 1190 c-3 -5 -1 -10 4 -10 6 0 11 5 11 10 0 6 -2 10 -4 10 -3 0 -8 -4 -11 -10z" />
+                                    <path
+                                        d="M475 1170 c3 -5 11 -10 16 -10 6 0 7 5 4 10 -3 6 -11 10 -16 10 -6 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M421 1166 c2 -2 15 -9 29 -16 23 -12 24 -12 11 3 -7 10 -20 17 -29 17 -8 0 -13 -2 -11 -4z" />
+                                    <path
+                                        d="M1085 1140 c-3 -5 -1 -10 4 -10 6 0 11 5 11 10 0 6 -2 10 -4 10 -3 0 -8 -4 -11 -10z" />
+                                    <path
+                                        d="M1050 1119 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z" />
+                                    <path d="M1840 1100 c-9 -6 -10 -10 -3 -10 6 0 15 5 18 10 8 12 4 12 -15 0z" />
+                                    <path d="M1030 1096 c0 -2 8 -10 18 -17 15 -13 16 -12 3 4 -13 16 -21 21 -21 13z" />
+                                    <path
+                                        d="M1075 1090 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z" />
+                                    <path
+                                        d="M1002 1038 c21 -32 45 -45 58 -32 8 8 4 10 -12 10 -15 -1 -27 7 -33 22 -5 12 -14 22 -19 22 -4 0 -2 -10 6 -22z" />
+                                    <path
+                                        d="M1030 1051 c0 -6 5 -13 10 -16 6 -3 10 1 10 9 0 9 -4 16 -10 16 -5 0 -10 -4 -10 -9z" />
+                                    <path
+                                        d="M990 1000 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2 0 -4 -4 -4 -10z" />
+                                    <path d="M2290 951 c0 -5 7 -12 16 -15 14 -5 15 -4 4 9 -14 17 -20 19 -20 6z" />
+                                    <path d="M2256 897 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path d="M156 887 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path d="M141 841 c-10 -7 -10 -10 -1 -16 6 -4 16 -3 22 3 13 13 -4 23 -21 13z" />
+                                    <path d="M666 717 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z" />
+                                    <path
+                                        d="M1350 670 l-25 -8 28 -1 c15 -1 27 4 27 9 0 6 -1 10 -2 9 -2 -1 -14 -5 -28 -9z" />
+                                    <path
+                                        d="M650 660 c0 -5 4 -10 9 -10 6 0 13 5 16 10 3 6 -1 10 -9 10 -9 0 -16 -4 -16 -10z" />
+                                    <path
+                                        d="M600 621 c0 -5 5 -13 10 -16 6 -3 10 -2 10 4 0 5 -4 13 -10 16 -5 3 -10 2 -10 -4z" />
+                                    <path
+                                        d="M1230 599 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z" />
+                                    <path
+                                        d="M2545 530 c-3 -5 -1 -10 6 -10 7 0 24 -10 38 -22 21 -19 20 -17 -3 10 -33 36 -33 36 -41 22z" />
+                                    <path
+                                        d="M2595 530 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12 -4 -9 -10z" />
+                                    <path
+                                        d="M2514 499 c-3 -6 2 -18 12 -27 17 -16 17 -16 5 0 -7 9 -10 22 -6 28 3 5 4 10 1 10 -3 0 -8 -5 -12 -11z" />
+                                    <path
+                                        d="M2550 490 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10 -4 -10 -10z" />
+                                    <path
+                                        d="M2505 440 c3 -5 11 -10 16 -10 6 0 7 5 4 10 -3 6 -11 10 -16 10 -6 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M2475 380 c-3 -5 1 -10 10 -10 9 0 13 5 10 10 -3 6 -8 10 -10 10 -2 0 -7 -4 -10 -10z" />
+                                    <path d="M369 323 c-13 -16 -12 -17 4 -4 16 13 21 21 13 21 -2 0 -10 -8 -17 -17z" />
+                                    <path
+                                        d="M285 310 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0 -7 -4 -4 -10z" />
+                                    <path
+                                        d="M840 200 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2 0 -4 -4 -4 -10z" />
+                                    <path d="M2185 171 c-3 -5 -2 -12 3 -15 5 -3 9 1 9 9 0 17 -3 19 -12 6z" />
+                                    <path d="M827 154 c-11 -11 3 -24 18 -18 8 4 12 10 9 15 -6 11 -18 12 -27 3z" />
+                                    <path d="M778 133 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <div class="my_trigger">
+                            <div class="hamburger hamburger--collapse-r">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <!-- Menu-Scroll-End -->
-
-
-    <!-- Small Screen Nav -->
-    <section class="smallNav wow slideInLeft">
-        <button id="smNavBtn" class="smallNavBtn px-3 py-1">
-        <i class="fa fa-bars text-danger"></i>
-    </button>
-        <ul class="navbar-nav" id="smMenu">
-            <li class="nav-item py-2 position-relative">
-                <a href="#home" class="nav-link d-flex align-items-center">
-                    <i class="fa fa-home ico pe-2"></i>
-                    <span class="dis">Home</span></a>
-            </li>
-            <li class="nav-item py-2 position-relative">
-                <a href="#skills" class="nav-link d-flex align-items-center">
-                    <i class="fa fa-life-ring ico pe-2"></i>
-                    <span class="dis">Skills</span></a>
-            </li>
-            <li class="nav-item py-2 position-relative">
-                <a href="#services" class="nav-link d-flex align-items-center">
-                    <i class="fa-brands fa-buffer ico pe-2"></i>
-                    <span class="dis">Services</span></a>
-            </li>
-            <li class="nav-item py-2 position-relative">
-                <a href="#portifolio" class="nav-link d-flex align-items-center">
-                    <i class="fa fa-id-badge ico pe-2"></i>
-                    <span class="dis">Portifolio</span></a>
-            </li>
-            <li class="nav-item py-2 position-relative">
-                <a href="#about" class="nav-link d-flex align-items-center">
-                    <i class="fa fa-circle-info ico pe-2"></i>
-                    <span class="dis">About</span></a>
-            </li>
-            <li class="nav-item py-2 position-relative">
-                <a href="#contact" class="nav-link d-flex align-items-center">
-                    <i class="fa fa-phone ico pe-2"></i>
-                    <span class="dis">Contact</span></a>
-            </li>
-        </ul>
-    </section>
-    <!-- Small Screen Nav End -->
-
-    <!-- Header Sec -->
-    <section class="heroSec" id="home">
-        <div class="note wow slideInRight">
-            <div class="upper">
-                <h3 class="text-center hi">Hi There!</h3>
-                <h1>I'M SOHAIL AMAN</h1>
-            </div>
-            <div class="container p-0">
-                <p>a
-                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-                </p>
-            </div>
-            <div class="hire mx-auto text-center position-relative">
-                <p class="text-light h4">Hire Me</p>
-                <div class="d-flex align-items-center justify-content-center">
-
-                    <a href="https://www.upwork.com/freelancers/~01f8267c7b73f1becb">
-                        <div class="circle">
-                            <img class="imageee" src="./assets/images/upwork.png" alt="" width="100%">
-                        </div>
-                    </a>
-
-                    <a href="https://www.fiverr.com/users/sohailaman121/seller_dashboard">
-                        <div class="circle">
-                            <img class="imageee" src="./assets/images/fiverr.png" alt="" width="100%">
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Header Sec End -->
-
-    <!-- About Sec -->
-    <section class="aboutSec mx-0 px-5 my-5 text-center d-flex align-items-center justify-content-center" id="about">
-        <div class="container p-0 aboutCont">
-            <h1 class="wow slideInLeft mb-3 w-100 aboutHeader">ABOUT</h1>
-            <div class="row mx-0 d-flex justify-content-between align-items-center">
-                <div class="col-lg-3 col-md-3 sol-sm-3 col-xs-3 d-flex align-items-center justify-content-start about-right">
-                    <div class="image-one me-auto">
-                        <img src="./assets/images/about.jpg" width="100%" alt="">
+            <div class="dropdown">
+                <div class="container">
+                    <div class="dropdown_inner">
+                        <ul class="anchor_nav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 sol-sm-7 col-xs-10 d-flex align-items-center textAbout">
-                    <p class="wow slideInRight mt-4 position-relative aboutTxt">
-                        <i class="fa-solid fa-quote-left fa-2x text-danger"></i> Innovative Front End Developer with 5 years experience building and maintaining responsive websites in the recruiting industry. Proficient in HTML, CSS, Bootstrap, JavaScript
-                        and ReactJs; plus modern libraries and frameworks. Passionate about usability and possess working knowledge of Adobe Photoshop & Sketch.
-                        <i class="fa-solid fa-quote-right fa-2x text-danger"></i>
-                    </p>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="soh_hero" id="home">
+            <!-- Hero Main Content -->
+            <div class="content">
+                <div class="container">
+                    <div class="content_inner d-flex justify-content-between align-items-center pt-4 w-75">
+                        <div class="name">
+                            <h3 class="stroke">Sohail</h3>
+                            <h3>Aman</h3>
+                            <span>Web Developer &amp; Freelancer</span>
+                            <div class="right_hire_wrap mt-5">
+                                <h4 class="ms-5 hire_head">Hire Me</h4>
+                                <hr width="60%">
+                                <div class="right_icons d-flex align-items-center ps-3">
+                                    <a target="_blank" href="https://www.upwork.com/freelancers/~01f8267c7b73f1becb"
+                                        class="me-3 ms-1 text-decoration-none">
+                                        <img class="svg all_titles_clr_chnge" src="./images/upwork-svgrepo-com.svg"
+                                            alt="">
+                                    </a>
+                                    <a target="_blank"
+                                        href="https://www.fiverr.com/users/sohailaman121/seller_dashboard"
+                                        class="ms-2 text-decoration-none">
+                                        <img class="svg all_titles_clr_chnge"
+                                            src="./images/fiverr-circle-svgrepo-com.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soh_down" data-skin="dark" data-position="">
+                        <div class="line_wrapper">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Main Content End -->
+        </div>
+        <!-- Hero End -->
+
+        <!-- About -->
+        <div class="soh_about pb-5" id="about">
+            <div class="container pb-5">
+                <div class="about_inner pb-5">
+                    <!-- User Thumbnail -->
+                    <div class="left">
+                        <img class="thumbnail thumbnail_1 mx-auto" src="./images/about-2.png" alt="" width="65%">
+                        <img class="thumbnail thumbnail_2 mx-auto" src="./images/about-22.png" alt="" width="65%">
+                    </div>
+                    <!-- About Content -->
+                    <div class="right">
+                        <div class="name">
+                            <h3>Sohail Aman<span class="bg">About</span></h3>
+                            <span class="job">Web Developer &amp; Freelancer</span>
+                        </div>
+                        <div class="text">
+                            <p>My name is Sohail Aman. I am a Web Developer, and I'm very passionate and dedicated to my
+                                work.</p>
+                            <p>With 3 years experience as a professional Web developer, I have acquired the skills and
+                                knowledge necessary to make your project a success. I enjoy every step of the
+                                development process, from discussion and collaboration.</p>
+                        </div>
+                        <!-- Social Icons -->
+                        <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/sohail-aman-a8ab8622a/">
+                                            <span class="first"><svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="1536.000000pt"
+                                                    height="1536.000000pt" viewBox="0 0 1536.000000 1536.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+                                                        fill="#">
+                                                        <path
+                                                            d="M1733 15348 c2 -12 -9 -15 -133 -36 -30 -6 -82 -18 -115 -27 -33 -9 -77 -20 -97 -24 -21 -5 -43 -13 -50 -18 -7 -6 -24 -13 -38 -16 -114 -25 -356 -155 -526 -281 -102 -76 -304 -278 -380 -380 -126 -170 -256 -412 -281 -526 -3 -14 -10 -31 -16 -38 -5 -7 -13 -29 -18 -50 -4 -20 -15 -64 -24 -97 -16 -58 -24 -97 -45 -216 -14 -76 -14 -10002 0 -10078 21 -119 29 -158 45 -216 9 -33 20 -77 24 -97 5 -21 13 -43 18 -50 6 -7 13 -24 16 -38 25 -114 155 -356 281 -526 76 -102 278 -304 380 -380 170 -126 412 -256 526 -281 14 -3 31 -10 38 -16 7 -5 29 -13 50 -18 20 -4 64 -15 97 -24 62 -17 98 -25 225 -47 111 -19 9949 -19 10060 0 127 22 163 30 225 47 33 9 77 20 97 24 21 5 43 13 50 18 7 6 24 13 38 16 114 25 356 155 526 281 102 76 304 278 380 380 126 170 256 412 281 526 3 14 10 31 16 38 5 7 13 29 18 50 4 20 15 64 24 97 17 62 25 98 47 225 19 111 19 9949 0 10060 -22 127 -30 163 -47 225 -9 33 -20 77 -24 97 -5 21 -13 43 -18 50 -6 7 -13 24 -16 38 -25 114 -155 356 -281 526 -76 102 -278 304 -380 380 -170 126 -412 256 -526 281 -14 3 -31 10 -38 16 -7 5 -29 13 -50 18 -20 4 -64 15 -97 24 -33 9 -85 21 -115 27 -124 21 -135 24 -132 36 1 9 -1120 12 -5008 12 -3888 0 -5009 -3 -5007 -12z m3027 -3583 l0 -795 -792 2 -793 3 -3 780 c-1 429 0 786 3 793 3 9 172 12 795 12 l790 0 0 -795z m-2 -4353 l2 -2772 -792 2 -793 3 -3 2759 c-1 2038 1 2762 9 2773 10 11 144 13 793 11 l781 -3 3 -2773z m2377 2756 c3 -13 6 -79 8 -148 2 -146 -10 -139 137 -84 19 7 76 27 125 44 50 18 104 38 122 46 17 8 38 14 46 14 9 0 28 6 44 14 39 20 124 46 147 46 11 0 42 6 70 14 28 8 69 20 91 26 183 51 584 51 775 0 25 -6 72 -18 105 -27 58 -14 83 -23 178 -59 131 -51 264 -119 334 -170 17 -13 34 -24 38 -24 5 0 72 -47 110 -78 85 -68 200 -170 235 -209 85 -95 145 -165 160 -188 8 -13 41 -61 72 -107 86 -126 210 -361 229 -433 9 -36 27 -88 45 -133 8 -18 14 -44 14 -57 0 -14 6 -42 14 -62 23 -62 45 -207 61 -398 13 -154 15 -422 13 -1865 l-3 -1685 -792 -3 -793 -2 0 1594 c0 1364 -2 1606 -15 1682 -18 111 -42 185 -77 247 -16 26 -28 50 -28 53 0 6 -94 128 -117 152 -22 22 -139 112 -147 112 -3 0 -27 12 -53 28 -105 60 -266 97 -393 89 -215 -14 -431 -121 -556 -275 -21 -26 -46 -55 -54 -64 -32 -36 -98 -183 -123 -273 -7 -28 -12 -550 -16 -1690 l-6 -1650 -784 -3 c-571 -1 -787 1 -797 9 -12 10 -14 454 -14 2756 0 1873 3 2750 10 2764 10 19 30 19 795 19 l785 0 5 -22z" />
+                                                    </g>
+                                                </svg> </span>
+                                            <span class="second">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="1536.000000pt"
+                                                    height="1536.000000pt" viewBox="0 0 1536.000000 1536.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+                                                        fill="#">
+                                                        <path
+                                                            d="M1733 15348 c2 -12 -9 -15 -133 -36 -30 -6 -82 -18 -115 -27 -33 -9 -77 -20 -97 -24 -21 -5 -43 -13 -50 -18 -7 -6 -24 -13 -38 -16 -114 -25 -356 -155 -526 -281 -102 -76 -304 -278 -380 -380 -126 -170 -256 -412 -281 -526 -3 -14 -10 -31 -16 -38 -5 -7 -13 -29 -18 -50 -4 -20 -15 -64 -24 -97 -16 -58 -24 -97 -45 -216 -14 -76 -14 -10002 0 -10078 21 -119 29 -158 45 -216 9 -33 20 -77 24 -97 5 -21 13 -43 18 -50 6 -7 13 -24 16 -38 25 -114 155 -356 281 -526 76 -102 278 -304 380 -380 170 -126 412 -256 526 -281 14 -3 31 -10 38 -16 7 -5 29 -13 50 -18 20 -4 64 -15 97 -24 62 -17 98 -25 225 -47 111 -19 9949 -19 10060 0 127 22 163 30 225 47 33 9 77 20 97 24 21 5 43 13 50 18 7 6 24 13 38 16 114 25 356 155 526 281 102 76 304 278 380 380 126 170 256 412 281 526 3 14 10 31 16 38 5 7 13 29 18 50 4 20 15 64 24 97 17 62 25 98 47 225 19 111 19 9949 0 10060 -22 127 -30 163 -47 225 -9 33 -20 77 -24 97 -5 21 -13 43 -18 50 -6 7 -13 24 -16 38 -25 114 -155 356 -281 526 -76 102 -278 304 -380 380 -170 126 -412 256 -526 281 -14 3 -31 10 -38 16 -7 5 -29 13 -50 18 -20 4 -64 15 -97 24 -33 9 -85 21 -115 27 -124 21 -135 24 -132 36 1 9 -1120 12 -5008 12 -3888 0 -5009 -3 -5007 -12z m3027 -3583 l0 -795 -792 2 -793 3 -3 780 c-1 429 0 786 3 793 3 9 172 12 795 12 l790 0 0 -795z m-2 -4353 l2 -2772 -792 2 -793 3 -3 2759 c-1 2038 1 2762 9 2773 10 11 144 13 793 11 l781 -3 3 -2773z m2377 2756 c3 -13 6 -79 8 -148 2 -146 -10 -139 137 -84 19 7 76 27 125 44 50 18 104 38 122 46 17 8 38 14 46 14 9 0 28 6 44 14 39 20 124 46 147 46 11 0 42 6 70 14 28 8 69 20 91 26 183 51 584 51 775 0 25 -6 72 -18 105 -27 58 -14 83 -23 178 -59 131 -51 264 -119 334 -170 17 -13 34 -24 38 -24 5 0 72 -47 110 -78 85 -68 200 -170 235 -209 85 -95 145 -165 160 -188 8 -13 41 -61 72 -107 86 -126 210 -361 229 -433 9 -36 27 -88 45 -133 8 -18 14 -44 14 -57 0 -14 6 -42 14 -62 23 -62 45 -207 61 -398 13 -154 15 -422 13 -1865 l-3 -1685 -792 -3 -793 -2 0 1594 c0 1364 -2 1606 -15 1682 -18 111 -42 185 -77 247 -16 26 -28 50 -28 53 0 6 -94 128 -117 152 -22 22 -139 112 -147 112 -3 0 -27 12 -53 28 -105 60 -266 97 -393 89 -215 -14 -431 -121 -556 -275 -21 -26 -46 -55 -54 -64 -32 -36 -98 -183 -123 -273 -7 -28 -12 -550 -16 -1690 l-6 -1650 -784 -3 c-571 -1 -787 1 -797 9 -12 10 -14 454 -14 2756 0 1873 3 2750 10 2764 10 19 30 19 795 19 l785 0 5 -22z" />
+                                                    </g>
+                                                </svg> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/SohailAman">
+                                            <span class="first">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                                    height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g
+                                                        transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                                                        <path
+                                                            d="M1375 2994 c-243 -35 -360 -67 -521 -144 -159 -77 -275 -160 -410 -294 -293 -293 -438 -643 -438 -1056 0 -413 145 -763 438 -1056 293 -293 643 -438 1056 -438 252 0 441 44 665 155 160 79 284 170 408 298 279 289 421 640 421 1041 0 312 -82 581 -255 840 -81 121 -244 289 -361 373 -177 127 -410 225 -618 262 -93 16 -326 28 -385 19z m390 -303 c245 -61 425 -161 595 -331 137 -137 227 -278 288 -450 56 -160 67 -229 66 -415 0 -149 -4 -183 -26 -272 -81 -315 -257 -568 -515 -739 -79 -52 -252 -136 -253 -122 0 2 -7 92 -15 200 -15 216 -26 258 -83 315 -18 17 -32 34 -32 37 0 3 15 6 34 6 54 0 222 47 289 80 185 94 291 246 317 454 14 111 1 212 -39 307 -29 68 -81 148 -120 183 -19 17 -21 30 -21 140 0 67 -3 151 -7 189 l-6 67 -43 0 c-56 0 -194 -50 -279 -101 l-66 -40 -77 18 c-111 26 -395 25 -509 -1 -81 -18 -82 -18 -110 1 -86 62 -244 123 -315 123 -35 0 -41 -4 -52 -32 -34 -83 -40 -195 -14 -296 l11 -43 -59 -57 c-146 -140 -184 -274 -133 -468 70 -267 270 -445 574 -508 44 -10 91 -19 104 -22 23 -5 23 -6 -10 -22 -21 -11 -41 -32 -53 -59 -22 -45 -50 -59 -146 -70 -104 -12 -155 18 -280 167 -51 60 -112 93 -167 88 -44 -4 -52 -21 -22 -45 83 -67 114 -104 154 -183 24 -47 58 -99 77 -117 67 -64 177 -92 296 -75 l62 9 0 -139 c0 -117 -2 -138 -15 -138 -21 0 -163 55 -222 86 -82 44 -115 65 -199 130 -221 171 -371 413 -440 709 -26 114 -26 378 0 490 58 249 162 440 331 610 199 201 432 316 720 359 75 11 332 -3 410 -23z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                            <span class="second">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                                    height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g
+                                                        transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                                                        <path
+                                                            d="M1375 2994 c-243 -35 -360 -67 -521 -144 -159 -77 -275 -160 -410 -294 -293 -293 -438 -643 -438 -1056 0 -413 145 -763 438 -1056 293 -293 643 -438 1056 -438 252 0 441 44 665 155 160 79 284 170 408 298 279 289 421 640 421 1041 0 312 -82 581 -255 840 -81 121 -244 289 -361 373 -177 127 -410 225 -618 262 -93 16 -326 28 -385 19z m390 -303 c245 -61 425 -161 595 -331 137 -137 227 -278 288 -450 56 -160 67 -229 66 -415 0 -149 -4 -183 -26 -272 -81 -315 -257 -568 -515 -739 -79 -52 -252 -136 -253 -122 0 2 -7 92 -15 200 -15 216 -26 258 -83 315 -18 17 -32 34 -32 37 0 3 15 6 34 6 54 0 222 47 289 80 185 94 291 246 317 454 14 111 1 212 -39 307 -29 68 -81 148 -120 183 -19 17 -21 30 -21 140 0 67 -3 151 -7 189 l-6 67 -43 0 c-56 0 -194 -50 -279 -101 l-66 -40 -77 18 c-111 26 -395 25 -509 -1 -81 -18 -82 -18 -110 1 -86 62 -244 123 -315 123 -35 0 -41 -4 -52 -32 -34 -83 -40 -195 -14 -296 l11 -43 -59 -57 c-146 -140 -184 -274 -133 -468 70 -267 270 -445 574 -508 44 -10 91 -19 104 -22 23 -5 23 -6 -10 -22 -21 -11 -41 -32 -53 -59 -22 -45 -50 -59 -146 -70 -104 -12 -155 18 -280 167 -51 60 -112 93 -167 88 -44 -4 -52 -21 -22 -45 83 -67 114 -104 154 -183 24 -47 58 -99 77 -117 67 -64 177 -92 296 -75 l62 9 0 -139 c0 -117 -2 -138 -15 -138 -21 0 -163 55 -222 86 -82 44 -115 65 -199 130 -221 171 -371 413 -440 709 -26 114 -26 378 0 490 58 249 162 440 331 610 199 201 432 316 720 359 75 11 332 -3 410 -23z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="soh_button" data-position="left">
+                            <a href="##">
+                                <span>Download CV</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- About Sec End  -->
+        <!-- About End -->
 
-    <!-- Skills Sec -->
-    <section class="skillSec position-relative" id="skills">
+        <!-- Skill Sec -->
+        <div class="skillSec pb-5">
+            <!-- Skill Progress -->
+            <div class="soh_skills pt-2">
+                <div class="container pb-5 mb-3" id="skills">
+                    <div class="name">
+                        <h3 class="all_titles_clr_chnge">SKILLS
+                            <span class="bg">SKILLS</span>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Skills Progress -->
+                <div class="box_inner container">
+                    <div class="description_wrap">
+                        <div class="my_box">
+                            <div class="left">
+                                <div class="about_title">
+                                    <h3>Programming Skills</h3>
+                                </div>
+                                <!-- Progress Bars -->
+                                <div class="waxon_progress">
+                                    <div class="progress_inner" data-value="98">
+                                        <span><span class="label">HTML</span><span class="number">98%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_inner" data-value="95">
+                                        <span><span class="label">CSS</span><span class="number">95%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_inner" data-value="95">
+                                        <span><span class="label">Bootstrap</span><span class="number">95%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_inner" data-value="80">
+                                        <span><span class="label">Javascript</span><span
+                                                class="number">80%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_inner" data-value="80">
+                                        <span><span class="label">React</span><span class="number">80%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="about_title">
+                                    <h3>Language Skills</h3>
+                                </div>
+                                <!-- Progress Bars -->
+                                <div class="waxon_progress">
+                                    <div class="progress_inner" data-value="95">
+                                        <span><span class="label">English</span><span class="number">95%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_inner" data-value="90">
+                                        <span><span class="label">Urdu</span><span class="number">98%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Dets -->
+            <div class="soh_skillSwiper py-5">
+                <div class="container">
+                    <div class="service_inner">
+                        <!-- Owl Carousel -->
+                        <ul class="owl-carousel mt-5">
+                            <li class="item">
+                                <div class="list_inner">
+                                    <img class="svg" src="./images/html-5-logo-svgrepo-com.svg" alt="">
+                                    <div class="details">
+                                        <h3>HTML</h3>
+                                        <p>
+                                            <b>HyperText Markup Language</b>, commonly abbreviated as <b>HTML</b>, is
+                                            the standard markup language used to create web pages.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="list_inner">
+                                    <img class="svg" src="./images/css3-svgrepo-com.svg" alt="">
+                                    <div class="details">
+                                        <h3>CSS</h3>
+                                        <p>
+                                            <b>Cascading Style Sheets (CSS)</b> is used for describing the presentation
+                                            of a document written in a markup language.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="list_inner">
+                                    <img class="svg" src="./images/bootstrap-svgrepo-com.svg" alt="">
+                                    <div class="details">
+                                        <h3>Bootstrap</h3>
+                                        <p>
+                                            <b>Bootstrap</b> is a free and open-source <b>CSS</b> framework directed at
+                                            responsive, mobile-first front-end web development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="list_inner">
+                                    <img class="svg" src="./images/js-svgrepo-com.svg" alt="">
+                                    <div class="details">
+                                        <h3>JavaScript</h3>
+                                        <p>
+                                            <b>JavaScript</b> is a high-level, dynamic, untyped, and interpreted
+                                            programming language.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="list_inner">
+                                    <img class="svg" src="./images/react-svgrepo-com.svg" alt="">
+                                    <div class="details">
+                                        <h3>React</h3>
+                                        <p>
+                                            <b>React</b> (also known as React.js or ReactJS) open-source JavaScript
+                                            library for building UI based on UI components.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Sec End -->
 
-        <div class="container pt-5">
-            <h2 class="text-center skillHead my-5 wow slideInLeft">SKILL</h2>
-            <div class="row m-0">
+        <!-- Portifolio -->
+        <div class="soh_portfolio pb-5" id="portfolio">
+            <div class="container">
+                <div class="soh_main_title">
+                    <div class="title">
+                        <h3 class="all_titles_clr_chnge">Featured Works<span class="bg">Portfolio</span></h3>
+                    </div>
+                    <!-- Tabs -->
+                    <div class="portfolio_filter">
+                        <ul>
+                            <li>
+                                <a href="#" class="current" data-filter="*">
+                                    <span class="first">All</span>
+                                    <span class="second">All</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".landingPage">
+                                    <span class="first">Landing Page</span>
+                                    <span class="second">Landing Page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".dashboard">
+                                    <span class="first">Dashboard</span>
+                                    <span class="second">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".todoList">
+                                    <span class="first">To-do List</span>
+                                    <span class="second">To-do List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".image">
+                                    <span class="first">Image</span>
+                                    <span class="second">Image</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="wrapper">
+                            <a href="#"><span class="trigger"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner Cards -->
+                <div class="portfolio_inner pb-5">
+                    <ul class="gallery_zoom">
+                        <li class="landingPage">
+                            <a target="_blank" href="https://sohailaman.github.io/Bondcap.com/"
+                                class="text-decoration-none">
+                                <div class="list_inner">
+                                    <div class="image">
+                                        <img src="././images/Landing Page.png" alt="" width="100%">
+                                    </div>
+                                    <div class="title ps-3 pb-3">
+                                        <h3><a href="#">Landing Page</a></h3>
+                                        <span><a href="#">Demo</a></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="landingPage">
+                            <a target="_blank" href="https://sohailaman.github.io/PSD-CONVERSION/"
+                                class="text-decoration-none">
+                                <div class="list_inner">
+                                    <div class="image">
+                                        <img src="././images/att-des.png" alt="">
+                                    </div>
+                                    <div class="title ps-3 pb-3">
+                                        <h3><a href="#">Attractive Page</a></h3>
+                                        <span><a href="#">Demo</a></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dashboard">
+                            <a target="_blank" href="https://sohailaman.github.io/Dashboard/"
+                                class="text-decoration-none">
+                                <div class="list_inner">
+                                    <div class="image">
+                                        <img src="././images/dash.png" alt="">
+                                    </div>
+                                    <div class="title ps-3 pb-3">
+                                        <h3><a href="#">Dashboard</a></h3>
+                                        <span><a href="#">Demo</a></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="todoList">
+                            <a target="_blank" href="https://sohailaman.github.io/Todo-List/"
+                                class="text-decoration-none">
+                                <div class="list_inner">
+                                    <div class="image">
+                                        <img src="././images/to-do list.png" alt="">
+                                    </div>
+                                    <div class="title ps-3 pb-3">
+                                        <h3><a href="#">To-do List</a></h3>
+                                        <span><a href="#">Demo</a></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="image">
+                            <div class="list_inner">
+                                <div class="image">
+                                    <img src="././images/portImg1.png" alt="">
+                                </div>
+                                <div class="title ps-3 pb-3">
+                                    <h3><a href="##">Responsive Design</a></h3>
+                                    <span><a href="##">Image</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="image">
+                            <div class="list_inner">
+                                <div class="image">
+                                    <img src="././images/portImg3.png" alt="">
+                                </div>
+                                <div class="title ps-3 pb-3">
+                                    <h3><a href="##">Forms Design</a></h3>
+                                    <span><a href="##">Image</a></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portifolio End -->
 
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+        <!-- Services -->
+        <div class="soh_services" id="services">
+            <div class="container">
+                <div class="soh_main_title">
+                    <div class="title">
+                        <h3 class="all_titles_clr_chnge">What Can I Do<span class="bg">SERVICES</span></h3>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper mb-5">
+                    <div class="swiper-wrapper mb-5 d-flex align-items-center">
                         <div class="swiper-slide">
-                            <img src="./assets/images/HTML.png" />
-                            <h1 class="swiper-caption">HTML</h1>
+                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
+                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                                    <div class="txt_cont">
+                                        <h3>HTML & CSS Responsive Web Design</h3>
+                                        <p class="serv_desc">
+                                            I can design fully responsive websites, with CSS at the core of front end
+                                            development alongside JavaScript and HTML.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="serv_svg col-5 d-flex justify-content-center">
+                                    <img src="./images/HTML-Des.png" width="90%" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/CSS.png" />
-                            <h1 class="swiper-caption">CSS</h1>
+                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
+                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                                    <div class="txt_cont">
+                                        <h3>PSD to Bootstrap</h3>
+                                        <p class="serv_desc">
+                                            I can convert PSD, Sketch, Ai, and Adobe XD files into Pixel-Perfect
+                                            standards that are compliant with HTML5/CSS3/Bootstrap5 templates
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="serv_svg col-5 d-flex justify-content-center">
+                                    <img src="./images/boot-des.png" width="90%" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/Bootstrap.png" />
-                            <h1 class="swiper-caption">Bootstrap</h1>
+                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
+                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                                    <div class="txt_cont">
+                                        <h3>Javascript Development</h3>
+                                        <p class="serv_desc">
+                                            Use JavaScript to build Dynamic, Functional and Responsive websites.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="serv_svg col-5 d-flex justify-content-center">
+                                    <img src="./images/JS-dev.png" width="90%" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/JS.png" />
-                            <h1 class="swiper-caption">JS</h1>
+                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
+                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                                    <div class="txt_cont">
+                                        <h3>React JS Development</h3>
+                                        <p class="serv_desc">
+                                            ReactJS is renowned for its extensibility, adjustability, and convenience. I
+                                            can create amazing websites using ReactJS.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="serv_svg col-5 d-flex justify-content-center">
+                                    <img src="./images/react-js.png" width="90%" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/React.png" />
-                            <h1 class="swiper-caption">ReactJS</h1>
+                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
+                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                                    <div class="txt_cont">
+                                        <h3>UI/UX Design</h3>
+                                        <p class="serv_desc">
+                                            I can create UX/UI website designs from scratch or work with ready design
+                                            mock-ups. I leverage the latest technology to construct user-friendly and
+                                            efficient interfaces.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="serv_svg col-5 d-flex justify-content-center">
+                                    <img src="./images/UI-UX.png" width="90%" alt="">
+                                </div>
+                            </div>
                         </div>
+                        <div class="swiper-button-next all_titles_clr_chnge"></div>
+                        <div class="swiper-button-prev all_titles_clr_chnge"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
+                <!-- Swiper -->
             </div>
-        </div>
-        <div class="skillPer py-5">
-            <div class="perContainer">
-                <div class="fillmult" data-width="90%">
-                    <span><b>HTML</b></span>
-                </div>
-            </div>
-            <div class="perContainer">
-                <div class="fillmult" data-width="88%">
-                    <span><b>CSS</b></span>
-                </div>
-            </div>
-            <div class="perContainer">
-                <div class="fillmult" data-width="88%">
-                    <span><b>Bootstrap</b></span>
-                </div>
-            </div>
-            <div class="perContainer">
-                <div class="fillmult" data-width="80%">
-                    <span><b>JS</b></span>
-                </div>
-            </div>
-            <div class="perContainer">
-                <div class="fillmult" data-width="70%">
-                    <span><b>REACT</b></span>
-                </div>
-            </div>
+            <!-- Services End -->
         </div>
 
-        <!-- Skill Details -->
-        <div class="btn-skillDets d-flex  justify-content-center mt-5 wow slideInUp.com">
-            <button class="effect effect-5 p-2" id="skillDets1" title="Learn More">Learn More</button>
-            <button class="effect effect-6 p-2" id="skillDets2" title="Show Less More">Show Less</button>
-        </div>
-        <div class="skillDetail py-5" id="sklillDet-menu">
-            <p class="text-center text-secondary">These are the programming languages and frameworks that I use in my projects.</p>
 
-            <div class="row m-0 d-flex align-items-center justify-content-center">
-                <div class="html my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
-                    <h4 class="detsHead">HTML5</h4>
-                    <hr>
-                    <p class="skillDet-txt mt-2">
-                        <b>HyperText Markup Language</b>, commonly abbreviated as HTML, is the standard markup language used to create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology used to create web pages, as well as to
-                        create user interfaces for mobile and web applications.
-                    </p>
-                </div>
-                <div class="css my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
-                    <h4 class="detsHead">CSS3</h4>
-                    <hr>
-                    <p class="skillDet-txt mt-2">
-                        <b>Cascading Style Sheets (CSS)</b> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written
-                        in HTML, the language can be applied to any XML document.
-                    </p>
-                </div>
-                <div class="js my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
-                    <h4 class="detsHead">JAVASCRIPT</h4>
-                    <hr>
-                    <p class="skillDet-txt mt-2">
-                        <b>JavaScript</b> is a high-level, dynamic, untyped, and interpreted programming language. Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production; the majority of websites employ it
-                        and it is supported by all modern Web browsers without plug-ins.
-                    </p>
-                </div>
-                <div class="js my-4 mx-3 col-lg-5 col-md-5 col-xsm-10 text-center">
-                    <h4 class="detsHead">REACT</h4>
-                    <hr>
-                    <p class="skillDet-txt mt-2">
-                        free <b>React</b> (also known as ReactJS) is a and oe front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
-                        React can be used as a base in the development of single-page or mobile applications.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Skill Sec End -->
-
-    <!-- Services Sec -->
-    <section class="section-services" id="services">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-md-10 col-lg-8">
-                    <div class="header-section">
-                        <h2 class="title wow slideInLeft">Exclusive <span>Services</span></h2>
-                        <p class="description wow slideInRight">
-                            These Are The Services We Offer!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service wow slideInLeft">
-                        <div class="part-1">
-                            <i class="bi bi-pc-display"></i>
-                            <h3 class="title">
-                                HTML & CSS Responsive Web Design
-                            </h3>
-                        </div>
-                        <div class="part-2">
-                            <p class="description">
-                                I can design fully responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.
-                            </p>
-
+        <!-- Contact -->
+        <div class="soh_contact" id="contact">
+            <div class="bg_image"></div>
+            <div class="container pb-5">
+                <div class="contact_inner">
+                    <!-- Title -->
+                    <div class="soh_main_title">
+                        <div class="title">
+                            <h3 class="all_titles_clr_chnge">Get in Touch<span class="bg">Contact</span></h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service wow slideInUp">
-                        <div class="part-1">
-                            <i class="fa fa-mobile"></i>
-                            <h3 class="title">
-                                PSD to Bootstrap
-                            </h3>
-                        </div>
-                        <div class="part-2">
-                            <p class="description">
-                                I can convert PSD, Sketch, Ai, and Adobe XD files into Pixel-Perfect standards that are compliant with HTML5/CSS3/Bootstrap5 templates
-                            </p>
-
-                        </div>
+                    <!-- Title -->
+                    <div class="desc pt-5">
+                        <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and
+                            8:00 p.m. ET, Monday through Friday</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service wow slideInRight">
-                        <div class="part-1">
-                            <i class="fa-brands fa-js-square"></i>
-                            <h3 class="title">
-                                Javascript Development
-                            </h3>
-                        </div>
-                        <div class="part-2">
-                            <p class="description">
-                                Use JavaScript to build dynamic and responsive websites.
-                            </p>
+                    <div class="wrapper pb-5">
+                        <!-- Form -->
+                        <div class="left wow fadeInLeft" data-wow-duration="0.8s">
+                            <div class="fields">
+                                <form action="/" method="post" class="contact_form" id="contact_form"
+                                    autocomplete="off">
+                                    <div class="returnmessage"
+                                        data-success="Your message has been received, We will contact you soon."></div>
+                                    <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                                    <div class="first">
+                                        <ul class="ps-0">
+                                            <li>
+                                                <input id="name" type="text" placeholder="Name">
+                                            </li>
+                                            <li>
+                                                <input id="email" type="text" placeholder="Email">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="last">
+                                        <textarea id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="soh_button" data-position="left">
+                                        <a id="send_message" href="#">
+                                            <span>Send Message</span>
+                                        </a>
+                                    </div>
 
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service wow slideInLeft">
-                        <div class="part-1">
-                            <i class="fa-brands fa-react"></i>
-                            <h3 class="title">
-                                React JS Development
-                            </h3>
-                        </div>
-                        <div class="part-2">
-                            <p class="description">
-                                ReactJS is renowned for its extensibility, adjustability, and convenience. I can create amazing websites using ReactJS.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service wow slideInRight">
-                        <div class="part-1">
-                            <i class="fa fa-shop"></i>
-                            <h3 class="title">
-                                UX/UI Design
-                            </h3>
-                        </div>
-                        <div class="part-2">
-                            <p class="description">
-                                I can create UX/UI website designs from scratch or work with ready design mock-ups. I leverage the latest technology to construct user-friendly and efficient interfaces.
-
-                            </p>
-
+                        <!-- Map -->
+                        <div class="right wow fadeInRight" data-wow-duration="0.8s">
+                            <div class="map_wrap">
+                                <iframe class="map-loc"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1615.6201041483341!2d74.356644!3d35.91662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc18679d793fc7a0f!2sCode%20Arena!5e0!3m2!1sen!2sus!4v1646842367010!5m2!1sen!2sus"
+                                    width="100%" height="350" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Services Sec End -->
+        <!-- Contact End -->
 
-    <!-- Portifolio Sec -->
-    <section class="portSec text-center my-5 py-5" id="portifolio">
-        <h1 class="port-head wow slideInLeft m-5">PORTIFOLIO</h1>
-        <div class="row m-0 d-flex align-items-center justify-content-center px-5">
-
-            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInLeft p-0">
-                <a href="https://sohailaman.github.io/Landing-Page/">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/landPage.png" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">landing Pages</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-12 p-3 wow slideInDown  p-0">
-                <a href="https://conversion-psd.netlify.app">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/responsive.webp" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">Responsive Sites</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInRight p-0">
-                <a href="https://sohailaman.github.io/Dashboard/">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/dash.png" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">Dash Boards</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInLeft p-0">
-                <a href="https://conversion-psd.netlify.app">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/psd conversion.jpg" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">PSD Conversion</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-12 p-3 wow slideInUp p-0">
-                <a href="​https://sohailaman.github.io/Todo-List/">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/forms.jpg" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">Forms</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-12 p-3 wow slideInRight p-0">
-                <a href="https://conversion-psd.netlify.app">
-                    <div class="effect-img">
-                        <div class="port-img">
-                            <img src="./assets/images/attractive.jpg" alt="">
-                        </div>
-                        <h2 class="port-text m-0 py-2 px-3">Attractive</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Portifolio Sec End-->
-
-    <!-- Contact Sec -->
-    <section id="contact" class="contact mt-3">
-
-        <h1 class="section-header wow slideInLeft">Contact</h1>
-
-        <div class="contact-wrapper row d-flex align-items-start justify-content-evenly mx-auto">
-
-            <!-- Left contact page -->
-            <div class="col-lg-5 col-md-5 col-xs-5 my-2 wow slideInLeft">
-                <div class="map d-flex align-items-center justify-content-start">
-                    <iframe class="map-loc" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1615.6201041483341!2d74.356644!3d35.91662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc18679d793fc7a0f!2sCode%20Arena!5e0!3m2!1sen!2sus!4v1646842367010!5m2!1sen!2sus" width="100%"
-                        height="440" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+        <!-- Footer -->
+        <footer class="soh_copyright">
+            <div class="container">
+                <!-- Footer Main -->
+                <div class="copyright_inner">
+                    <ul class="ps-0">
+                        <li class="wow fadeInDown" data-wow-duration="0.8s">
+                            <span class="all_titles_clr_chnge">SOHAIL AMAN</span>
+                            <span>PORTFOLIO</span>
+                        </li>
+                        <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <span>GILGIT STATE</span>
+                            <span>Gilgit, Pakistan</span>
+                        </li>
+                        <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <span>
+                                <a href="mailto:sohailaman121@gmail.com" target="_blank">
+                                    <span>sohailaman121@gmail.com</span>
+                                </a>
+                            </span>
+                            <a class="text-decoration-none" href="tel:+923444321653">
+                                <span class="all_titles_clr_chnge">+92 344 432 16 53</span>
+                            </a>
+                        </li>
+                        <!-- Social Icons -->
+                        <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/sohail-aman-a8ab8622a/">
+                                            <span class="first"><svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="1536.000000pt"
+                                                    height="1536.000000pt" viewBox="0 0 1536.000000 1536.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+                                                        fill="#">
+                                                        <path
+                                                            d="M1733 15348 c2 -12 -9 -15 -133 -36 -30 -6 -82 -18 -115 -27 -33 -9 -77 -20 -97 -24 -21 -5 -43 -13 -50 -18 -7 -6 -24 -13 -38 -16 -114 -25 -356 -155 -526 -281 -102 -76 -304 -278 -380 -380 -126 -170 -256 -412 -281 -526 -3 -14 -10 -31 -16 -38 -5 -7 -13 -29 -18 -50 -4 -20 -15 -64 -24 -97 -16 -58 -24 -97 -45 -216 -14 -76 -14 -10002 0 -10078 21 -119 29 -158 45 -216 9 -33 20 -77 24 -97 5 -21 13 -43 18 -50 6 -7 13 -24 16 -38 25 -114 155 -356 281 -526 76 -102 278 -304 380 -380 170 -126 412 -256 526 -281 14 -3 31 -10 38 -16 7 -5 29 -13 50 -18 20 -4 64 -15 97 -24 62 -17 98 -25 225 -47 111 -19 9949 -19 10060 0 127 22 163 30 225 47 33 9 77 20 97 24 21 5 43 13 50 18 7 6 24 13 38 16 114 25 356 155 526 281 102 76 304 278 380 380 126 170 256 412 281 526 3 14 10 31 16 38 5 7 13 29 18 50 4 20 15 64 24 97 17 62 25 98 47 225 19 111 19 9949 0 10060 -22 127 -30 163 -47 225 -9 33 -20 77 -24 97 -5 21 -13 43 -18 50 -6 7 -13 24 -16 38 -25 114 -155 356 -281 526 -76 102 -278 304 -380 380 -170 126 -412 256 -526 281 -14 3 -31 10 -38 16 -7 5 -29 13 -50 18 -20 4 -64 15 -97 24 -33 9 -85 21 -115 27 -124 21 -135 24 -132 36 1 9 -1120 12 -5008 12 -3888 0 -5009 -3 -5007 -12z m3027 -3583 l0 -795 -792 2 -793 3 -3 780 c-1 429 0 786 3 793 3 9 172 12 795 12 l790 0 0 -795z m-2 -4353 l2 -2772 -792 2 -793 3 -3 2759 c-1 2038 1 2762 9 2773 10 11 144 13 793 11 l781 -3 3 -2773z m2377 2756 c3 -13 6 -79 8 -148 2 -146 -10 -139 137 -84 19 7 76 27 125 44 50 18 104 38 122 46 17 8 38 14 46 14 9 0 28 6 44 14 39 20 124 46 147 46 11 0 42 6 70 14 28 8 69 20 91 26 183 51 584 51 775 0 25 -6 72 -18 105 -27 58 -14 83 -23 178 -59 131 -51 264 -119 334 -170 17 -13 34 -24 38 -24 5 0 72 -47 110 -78 85 -68 200 -170 235 -209 85 -95 145 -165 160 -188 8 -13 41 -61 72 -107 86 -126 210 -361 229 -433 9 -36 27 -88 45 -133 8 -18 14 -44 14 -57 0 -14 6 -42 14 -62 23 -62 45 -207 61 -398 13 -154 15 -422 13 -1865 l-3 -1685 -792 -3 -793 -2 0 1594 c0 1364 -2 1606 -15 1682 -18 111 -42 185 -77 247 -16 26 -28 50 -28 53 0 6 -94 128 -117 152 -22 22 -139 112 -147 112 -3 0 -27 12 -53 28 -105 60 -266 97 -393 89 -215 -14 -431 -121 -556 -275 -21 -26 -46 -55 -54 -64 -32 -36 -98 -183 -123 -273 -7 -28 -12 -550 -16 -1690 l-6 -1650 -784 -3 c-571 -1 -787 1 -797 9 -12 10 -14 454 -14 2756 0 1873 3 2750 10 2764 10 19 30 19 795 19 l785 0 5 -22z" />
+                                                    </g>
+                                                </svg> </span>
+                                            <span class="second">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="1536.000000pt"
+                                                    height="1536.000000pt" viewBox="0 0 1536.000000 1536.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+                                                        fill="#">
+                                                        <path
+                                                            d="M1733 15348 c2 -12 -9 -15 -133 -36 -30 -6 -82 -18 -115 -27 -33 -9 -77 -20 -97 -24 -21 -5 -43 -13 -50 -18 -7 -6 -24 -13 -38 -16 -114 -25 -356 -155 -526 -281 -102 -76 -304 -278 -380 -380 -126 -170 -256 -412 -281 -526 -3 -14 -10 -31 -16 -38 -5 -7 -13 -29 -18 -50 -4 -20 -15 -64 -24 -97 -16 -58 -24 -97 -45 -216 -14 -76 -14 -10002 0 -10078 21 -119 29 -158 45 -216 9 -33 20 -77 24 -97 5 -21 13 -43 18 -50 6 -7 13 -24 16 -38 25 -114 155 -356 281 -526 76 -102 278 -304 380 -380 170 -126 412 -256 526 -281 14 -3 31 -10 38 -16 7 -5 29 -13 50 -18 20 -4 64 -15 97 -24 62 -17 98 -25 225 -47 111 -19 9949 -19 10060 0 127 22 163 30 225 47 33 9 77 20 97 24 21 5 43 13 50 18 7 6 24 13 38 16 114 25 356 155 526 281 102 76 304 278 380 380 126 170 256 412 281 526 3 14 10 31 16 38 5 7 13 29 18 50 4 20 15 64 24 97 17 62 25 98 47 225 19 111 19 9949 0 10060 -22 127 -30 163 -47 225 -9 33 -20 77 -24 97 -5 21 -13 43 -18 50 -6 7 -13 24 -16 38 -25 114 -155 356 -281 526 -76 102 -278 304 -380 380 -170 126 -412 256 -526 281 -14 3 -31 10 -38 16 -7 5 -29 13 -50 18 -20 4 -64 15 -97 24 -33 9 -85 21 -115 27 -124 21 -135 24 -132 36 1 9 -1120 12 -5008 12 -3888 0 -5009 -3 -5007 -12z m3027 -3583 l0 -795 -792 2 -793 3 -3 780 c-1 429 0 786 3 793 3 9 172 12 795 12 l790 0 0 -795z m-2 -4353 l2 -2772 -792 2 -793 3 -3 2759 c-1 2038 1 2762 9 2773 10 11 144 13 793 11 l781 -3 3 -2773z m2377 2756 c3 -13 6 -79 8 -148 2 -146 -10 -139 137 -84 19 7 76 27 125 44 50 18 104 38 122 46 17 8 38 14 46 14 9 0 28 6 44 14 39 20 124 46 147 46 11 0 42 6 70 14 28 8 69 20 91 26 183 51 584 51 775 0 25 -6 72 -18 105 -27 58 -14 83 -23 178 -59 131 -51 264 -119 334 -170 17 -13 34 -24 38 -24 5 0 72 -47 110 -78 85 -68 200 -170 235 -209 85 -95 145 -165 160 -188 8 -13 41 -61 72 -107 86 -126 210 -361 229 -433 9 -36 27 -88 45 -133 8 -18 14 -44 14 -57 0 -14 6 -42 14 -62 23 -62 45 -207 61 -398 13 -154 15 -422 13 -1865 l-3 -1685 -792 -3 -793 -2 0 1594 c0 1364 -2 1606 -15 1682 -18 111 -42 185 -77 247 -16 26 -28 50 -28 53 0 6 -94 128 -117 152 -22 22 -139 112 -147 112 -3 0 -27 12 -53 28 -105 60 -266 97 -393 89 -215 -14 -431 -121 -556 -275 -21 -26 -46 -55 -54 -64 -32 -36 -98 -183 -123 -273 -7 -28 -12 -550 -16 -1690 l-6 -1650 -784 -3 c-571 -1 -787 1 -797 9 -12 10 -14 454 -14 2756 0 1873 3 2750 10 2764 10 19 30 19 795 19 l785 0 5 -22z" />
+                                                    </g>
+                                                </svg> </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/SohailAman">
+                                            <span class="first">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                                    height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g
+                                                        transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                                                        <path
+                                                            d="M1375 2994 c-243 -35 -360 -67 -521 -144 -159 -77 -275 -160 -410 -294 -293 -293 -438 -643 -438 -1056 0 -413 145 -763 438 -1056 293 -293 643 -438 1056 -438 252 0 441 44 665 155 160 79 284 170 408 298 279 289 421 640 421 1041 0 312 -82 581 -255 840 -81 121 -244 289 -361 373 -177 127 -410 225 -618 262 -93 16 -326 28 -385 19z m390 -303 c245 -61 425 -161 595 -331 137 -137 227 -278 288 -450 56 -160 67 -229 66 -415 0 -149 -4 -183 -26 -272 -81 -315 -257 -568 -515 -739 -79 -52 -252 -136 -253 -122 0 2 -7 92 -15 200 -15 216 -26 258 -83 315 -18 17 -32 34 -32 37 0 3 15 6 34 6 54 0 222 47 289 80 185 94 291 246 317 454 14 111 1 212 -39 307 -29 68 -81 148 -120 183 -19 17 -21 30 -21 140 0 67 -3 151 -7 189 l-6 67 -43 0 c-56 0 -194 -50 -279 -101 l-66 -40 -77 18 c-111 26 -395 25 -509 -1 -81 -18 -82 -18 -110 1 -86 62 -244 123 -315 123 -35 0 -41 -4 -52 -32 -34 -83 -40 -195 -14 -296 l11 -43 -59 -57 c-146 -140 -184 -274 -133 -468 70 -267 270 -445 574 -508 44 -10 91 -19 104 -22 23 -5 23 -6 -10 -22 -21 -11 -41 -32 -53 -59 -22 -45 -50 -59 -146 -70 -104 -12 -155 18 -280 167 -51 60 -112 93 -167 88 -44 -4 -52 -21 -22 -45 83 -67 114 -104 154 -183 24 -47 58 -99 77 -117 67 -64 177 -92 296 -75 l62 9 0 -139 c0 -117 -2 -138 -15 -138 -21 0 -163 55 -222 86 -82 44 -115 65 -199 130 -221 171 -371 413 -440 709 -26 114 -26 378 0 490 58 249 162 440 331 610 199 201 432 316 720 359 75 11 332 -3 410 -23z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                            <span class="second">
+                                                <svg class="svg all_titles_clr_chnge" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
+                                                    height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g
+                                                        transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                                                        <path
+                                                            d="M1375 2994 c-243 -35 -360 -67 -521 -144 -159 -77 -275 -160 -410 -294 -293 -293 -438 -643 -438 -1056 0 -413 145 -763 438 -1056 293 -293 643 -438 1056 -438 252 0 441 44 665 155 160 79 284 170 408 298 279 289 421 640 421 1041 0 312 -82 581 -255 840 -81 121 -244 289 -361 373 -177 127 -410 225 -618 262 -93 16 -326 28 -385 19z m390 -303 c245 -61 425 -161 595 -331 137 -137 227 -278 288 -450 56 -160 67 -229 66 -415 0 -149 -4 -183 -26 -272 -81 -315 -257 -568 -515 -739 -79 -52 -252 -136 -253 -122 0 2 -7 92 -15 200 -15 216 -26 258 -83 315 -18 17 -32 34 -32 37 0 3 15 6 34 6 54 0 222 47 289 80 185 94 291 246 317 454 14 111 1 212 -39 307 -29 68 -81 148 -120 183 -19 17 -21 30 -21 140 0 67 -3 151 -7 189 l-6 67 -43 0 c-56 0 -194 -50 -279 -101 l-66 -40 -77 18 c-111 26 -395 25 -509 -1 -81 -18 -82 -18 -110 1 -86 62 -244 123 -315 123 -35 0 -41 -4 -52 -32 -34 -83 -40 -195 -14 -296 l11 -43 -59 -57 c-146 -140 -184 -274 -133 -468 70 -267 270 -445 574 -508 44 -10 91 -19 104 -22 23 -5 23 -6 -10 -22 -21 -11 -41 -32 -53 -59 -22 -45 -50 -59 -146 -70 -104 -12 -155 18 -280 167 -51 60 -112 93 -167 88 -44 -4 -52 -21 -22 -45 83 -67 114 -104 154 -183 24 -47 58 -99 77 -117 67 -64 177 -92 296 -75 l62 9 0 -139 c0 -117 -2 -138 -15 -138 -21 0 -163 55 -222 86 -82 44 -115 65 -199 130 -221 171 -371 413 -440 709 -26 114 -26 378 0 490 58 249 162 440 331 610 199 201 432 316 720 359 75 11 332 -3 410 -23z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/hunzai_s.a/">
+                                            <span class="first"><img class="svg all_titles_clr_chnge"
+                                                    src="./images/social-instagram.svg" alt=""></span>
+                                            <span class="second"><img class="svg all_titles_clr_chnge"
+                                                    src="./images/social-instagram.svg" alt=""></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/sohailaman.44">
+                                            <span class="first"><img class="svg all_titles_clr_chnge"
+                                                    src="./images/social-facebook.svg" alt=""></span>
+                                            <span class="second"><img class="svg all_titles_clr_chnge"
+                                                    src="./images/social-facebook.svg" alt=""></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </footer>
+        <!-- Footer End -->
 
-            <!-- Right contact page -->
-            <form id="contact-form" class="wow slideInRight form-horizontal col-lg-5 col-md-5 col-xs-5 my-2" role="form">
+        <!-- cursor -->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
 
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                    </div>
-                </div>
-
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-
-                <button class="send-button" id="submit" type="submit" action value="SEND">
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane mb-3">
-                </i><span class="send-text">SEND</span>
-              </div>
-            
-            </button>
-
-            </form>
-
-        </div>
-
-    </section>
-    <!-- Contact Sec End -->
-
-    <section class="footer m-0 py-5">
-        <div class="direct-contact-container">
-            <ul class="social-media-list wow slideInRight">
-                <li>
-                    <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-            <hr>
-
-            <ul class="contact-list d-flex justify-content-evenly wow slideInLeft">
-                <li class="list-item m-2"><i class="text-secondary fa fa-map-marker"><span class="contact-text place">GILGIT, Pakistan</span></i></li>
-
-                <li class="list-item m-2"><i class="text-secondary fa fa-phone"><span class="contact-text phone"><a href="tel:+923444321653" title="Give me a call">(+92) 3444321653</a></span></i></li>
-
-                <li class="list-item m-2"><i class="text-secondary fa fa-envelope"><span class="contact-text gmail"><a href="mailto:sohailaman121@gmail.com" title="Send me an email">sohailaman121@gmail.com</a></span></i></li>
-            </ul>
-
-            <div class="copyright wow slideInUp">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-        </div>
-    </section>
-
-    <!-- START LOADER HTML -->
-    <div id="preloader" class="preloader">
-        <div id="loader"></div>
     </div>
-    <!-- END LOADER HTML -->
-
-
-    <!-- Scroll To Top -->
-    <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket"><i></i></a>
-
-
-
-    <!--  -->
-    <!-- LINKS -->
-    <!--  -->
-
-    <!-- Swiper -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-    <!-- Animate.CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/wow.min.js"></script>
 
 
     <!--Bootstrap JS Bundle -->
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-    <script src="./js/port.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/js-jquery.js"></script>
+    <script src="js/js-plugins.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

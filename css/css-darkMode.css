@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+body.dark {
+    background-color: #000;
+    color: #bbb
+}
+
+body.dark ::-webkit-input-placeholder {
+    color: #fff
+}
+
+body.dark :-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+body.dark ::-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+body.dark :-ms-input-placeholder {
+    color: #fff
+}
+
+body.dark ::-ms-input-placeholder {
+    color: #fff
+}
+
+body.dark ::placeholder {
+    color: #fff
+}
+
+body.dark h3 {
+    color: #fff
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+    color: #fff
+}
+
+body.dark .cursor-inner {
+    background-color: #fff;
+}
+
+body.dark .cursor-inner.cursor-hover {
+    opacity: .3;
+    background-color: #fff;
+}
+
+body.dark .cursor-outer {
+    opacity: .5;
+    border-color: #fff;
+}
+
+body.dark .cursor-outer.cursor-hover {
+    opacity: 0
+}
+
+body.dark .soh_topbar .menu .links ul li.current a {
+    color: #FF8C00;
+}
+
+body.dark .soh_topbar .topbar_inner .logo svg {
+    color: #fff;
+}
+
+body.dark .soh_settings .icon {
+    background-color: #000 !important;
+    border: 1px solid #bbb;
+    border-right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark .soh_settings .icon svg {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark .soh_all_wrap #mode_switch {
+    background-color: transparent;
+    border: 1px solid #000 !important;
+}
+
+body.dark .soh_all_wrap #mode_switch span {
+    position: absolute;
+    right: -1px;
+    background-color: #000;
+    transform: none;
+    transition: all 0.4s ease-in-out;
+}
+
+body.dark .soh_topbar.animate {
+    background: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(250, 248, 248, 0.06);
+}
+
+body.dark .soh_hero .background .leftpart {
+    background-color: #000
+}
+
+body.dark .soh_hero .background .myOverlay {
+    background-color: #000
+}
+
+body.dark .soh_hero .right_hire_wrap .right_icons .svg {
+    color: #fff;
+}
+
+body.dark .soh_hero .right_hire_wrap hr {
+    background-color: #fff;
+}
+
+body.dark .soh_topbar .menu .links ul li a {
+    color: #fff
+}
+
+body.dark .soh_topbar .menu .links ul li a:hover {
+    color: #fff
+}
+
+body.dark .soh_hero .content_inner h3 {
+    color: #fff
+}
+
+body.dark .soh_hero .content_inner h3.stroke {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent
+}
+
+body.dark .soh_down .line_wrapper:before {
+    background-color: #fff
+}
+
+body.dark .soh_about {
+    background-color: #212428;
+}
+
+body.dark .soh_about .name h3 {
+    color: #fff
+}
+
+body.dark .soh_about .name h3 .bg {
+    -webkit-text-stroke: 1px #fff
+}
+
+body.dark .soh_about .name {
+    border-bottom: 1px solid rgba(255, 255, 255, .1)
+}
+
+body.dark .soh_about .about_inner .left {
+    width: 40%;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+body.dark .soh_about .about_inner .left .thumbnail {
+    display: block;
+    border-left: 8px solid white;
+    border-top: 8px solid white;
+}
+
+body.dark .soh_about .about_inner .left .thumbnail_2 {
+    display: none;
+}
+
+body.dark .soh_button a {
+    border-color: #fff;
+    background-color: #fff;
+    color: #000
+}
+
+body.dark .soh_button a:hover {
+    background-color: transparent;
+    color: #fff
+}
+
+body.dark .soh_skills .about_title h3 {
+    color: #fff;
+}
+
+body.dark .soh_services .swiper-pagination .swiper-pagination-bullet {
+    background-color: #bbb;
+}
+
+body.dark .soh_services .swiper-button-prev,
+body.dark .soh_services .swiper-button-next {
+    color: #fff;
+}
+
+body.dark .soh_skillSwiper .service_inner {
+    box-shadow: 0 5px 18px rgba(236, 234, 234, 0.06);
+}
+
+body.dark .soh_skillSwiper ul li .svg {
+    color: #fff
+}
+
+body.dark .soh_portfolio .portfolio_filter .wrapper .trigger {
+    background-color: #fff
+}
+
+body.dark .soh_portfolio .portfolio_filter .wrapper .trigger:before {
+    background-color: #fff
+}
+
+body.dark .soh_portfolio .portfolio_filter .wrapper .trigger:after {
+    background-color: #fff
+}
+
+body.dark .soh_portfolio .portfolio_filter ul li a {
+    color: #fff
+}
+
+body.dark .soh_portfolio {
+    background-color: #212428
+}
+
+body.dark .soh_main_title .title h3 .bg,
+body.dark .soh_skills .name h3 .bg {
+    -webkit-text-stroke: 1px #fff
+}
+
+body.dark .soh_portfolio .portfolio_inner ul li .title h3 a {
+    color: #fff
+}
+
+body.dark .soh_portfolio .portfolio_inner ul li .title span a {
+    color: #bbb
+}
+
+body.dark .soh_services .quote_list ul li .svg {
+    color: #fff
+}
+
+body.dark .soh_services .short .author {
+    color: #fff
+}
+
+body.dark .soh_services .short .job {
+    color: #bbb
+}
+
+body.dark .soh_contact {
+    background-color: #212428;
+}
+
+body.dark .soh_contact .fields ul li input {
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #fff
+}
+
+body.dark .soh_contact .fields ul li input:focus {
+    border: 1px solid rgba(255, 255, 255, .3)
+}
+
+body.dark .soh_contact .fields .last textarea {
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #fff
+}
+
+body.dark .soh_contact .fields .last textarea:focus {
+    border: 1px solid rgba(255, 255, 255, .3)
+}
+
+body.dark .soh_copyright {
+    background-color: #000;
+}
+
+body.dark .soh_copyright .copyright_inner .social .svg,
+body.dark .soh_copyright .copyright_inner .social ul li a,
+body.dark .soh_copyright .copyright_inner>ul>li span {
+    color: #fff;
+    text-decoration: none;
+}
+
+body.dark .soh_skills .about_title h3 {
+    color: #fff
+}
+
+body.dark .progress_inner>span {
+    color: #fff
+}
+
+body.dark .progress_inner .background .bar_in {
+    background-color: #fff
+}
+
+body.dark .progress_inner .background {
+    background: rgba(255, 255, 255, .09)
+}
+
+body.dark .soh_skills .list_inner {
+    border: 1px solid rgba(255, 255, 255, .1)
+}
+
+body.dark .soh_all_wrap[data-color=blue] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=blue] .soh_button a:hover {
+    border-color: #4169e1
+}
+
+body.dark .soh_all_wrap[data-color=green] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=green] .soh_button a:hover {
+    border-color: #66b95c
+}
+
+body.dark .soh_all_wrap[data-color=brown] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=brown] .soh_button a:hover {
+    border-color: #ff9800
+}
+
+body.dark .soh_all_wrap[data-color=pink] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=pink] .soh_button a:hover {
+    border-color: #ff5e94
+}
+
+body.dark .soh_all_wrap[data-color=orange] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=orange] .soh_button a:hover {
+    border-color: #fa5b0f
+}
+
+body.dark .soh_all_wrap[data-color=black] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=black] .soh_button a:hover {
+    border-color: #000
+}
+
+body.dark .soh_all_wrap[data-color=white] .soh_button a {
+    color: #000
+}
+
+body.dark .soh_all_wrap[data-color=white] .soh_button a:hover {
+    border-color: #fff;
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=purple] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=purple] .soh_button a:hover {
+    border-color: #9200ee
+}
+
+body.dark .soh_all_wrap[data-color=sky] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=sky] .soh_button a:hover {
+    border-color: #00d4bd
+}
+
+body.dark .soh_all_wrap[data-color=cadetBlue] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=cadetBlue] .soh_button a:hover {
+    border-color: #5e9e9f
+}
+
+body.dark .soh_all_wrap[data-color=olive] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=olive] .soh_button a:hover {
+    border-color: #666d41
+}
+
+body.dark .soh_all_wrap[data-color=crimson] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=crimson] .soh_button a:hover {
+    border-color: #e54b4b
+}
+
+body.dark .soh_all_wrap[data-color=red] .soh_button a {
+    color: #fff
+}
+
+body.dark .soh_all_wrap[data-color=red] .soh_button a:hover {
+    border-color: #fe0000
+}
