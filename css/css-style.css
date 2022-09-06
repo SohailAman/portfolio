@@ -1406,12 +1406,29 @@ body.dark .soh_portfolio .list_inner {
     opacity: 1 !important;
 }
 
+.soh_services .swiper-button-next:hover {
+    color: #FF8C00;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
 .soh_services .swiper-button-next {
-    right: -50px !important;
+    right: 30px !important;
+    transition: .4s;
+    top: -30px;
+}
+
+.soh_services .swiper-button-prev:hover {
+    color: #FF8C00;
+    transform: scale(1.1);
+    transition: .4s;
 }
 
 .soh_services .swiper-button-prev {
-    left: -50px !important;
+    right: 30px !important;
+    transition: .4s;
+    left: auto !important;
+    top: -60px;
 }
 
 .swiper-button-next:after,
