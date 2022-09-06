@@ -2659,6 +2659,11 @@ body.dark .soh_settings .cursor li .svg,
 }
 
 @media(max-width:768px) {
+    .soh_mobile_menu .topbar_inner .bigger .topbar_in svg {
+        width: 11vh;
+        height: 8vh;
+    }
+
     .soh_hero .content_inner h3 {
         font-size: 50px
     }
@@ -2673,7 +2678,31 @@ body.dark .soh_settings .cursor li .svg,
     }
 
     .soh_portfolio .portfolio_inner ul {
-        margin: 0
+        margin: 0;
+        padding: 0;
+    }
+
+    .soh_services .swiper_inner {
+        align-items: flex-start !important;
+    }
+
+    .soh_services .serv_svg.col-5,
+    .soh_services .swiper_inner .col-6 {
+        padding: 0;
+        text-align: start !important;
+    }
+
+    .soh_services .serv_svg img {
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .soh_services .swiper-slide .text_inner h3 {
+        font-size: 18px;
+    }
+
+    .soh_services .soh_main_title .title h3 {
+        margin-bottom: 3rem;
     }
 
     .soh_portfolio .portfolio_inner ul li {

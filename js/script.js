@@ -383,11 +383,12 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 30,
     mousewheel: true,
+    speed: 1000,
     keyboard: {
         enabled: true,
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
     },
 
