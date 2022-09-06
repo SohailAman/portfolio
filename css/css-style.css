@@ -2472,6 +2472,11 @@ body.dark .soh_settings .cursor li .svg,
         margin-bottom: 50px
     }
 
+    body.dark .soh_about .about_inner .left {
+        width: 100%;
+        margin-bottom: 50px
+    }
+
     .soh_about .about_inner .left .image .myDot {
         display: none
     }

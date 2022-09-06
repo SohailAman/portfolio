@@ -195,18 +195,18 @@ html {
     top: 5%;
 }
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
     background-color: #202020 !important;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: transparent;
     background-image: -webkit-linear-gradient(35deg, #d1d9e5 25%, #e7e7e7 25%, #e7e7e7 50%, #d1d9e5 50%, #d1d9e5 75%, #e7e7e7 75%, #e7e7e7);
     border-radius: 0 0 8px 8px;
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
@@ -248,12 +248,12 @@ html {
 
 /* Selection color */
 
- ::-moz-selection {
+::-moz-selection {
     background-color: #FA6862;
     color: #fff;
 }
 
- ::selection {
+::selection {
     background-color: #FA6862;
     color: #fff;
 }
@@ -264,27 +264,27 @@ html {
    */
 
 .site-wrapper .form-control::-webkit-input-placeholder,
- ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     opacity: 1;
     color: inherit;
 }
 
 .site-wrapper .form-control:-moz-placeholder,
- :-moz-placeholder {
+:-moz-placeholder {
     /* Firefox 18- */
     opacity: 1;
     color: inherit;
 }
 
 .site-wrapper .form-control::-moz-placeholder,
- ::-moz-placeholder {
+::-moz-placeholder {
     /* Firefox 19+ */
     opacity: 1;
     color: inherit;
 }
 
 .site-wrapper .form-control:-ms-input-placeholder,
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     opacity: 1;
     color: inherit;
 }
@@ -865,6 +865,7 @@ html {
         filter: blur(12px);
         opacity: 0;
     }
+
     100% {
         -webkit-filter: blur(0px);
         filter: blur(0px);
@@ -879,6 +880,7 @@ html {
         filter: blur(12px);
         opacity: 0;
     }
+
     100% {
         -webkit-filter: blur(0px);
         filter: blur(0px);
@@ -891,9 +893,11 @@ html {
         float: none;
         margin: 0 auto 50px;
     }
+
     .hexagon-item:first-child {
         margin-left: auto;
     }
+
     .page-home .hexagon-item:nth-last-child(1),
     .page-home .hexagon-item:nth-last-child(2),
     .page-home .hexagon-item:nth-last-child(3) {
@@ -909,21 +913,27 @@ html {
     .heroSec {
         height: 10vh !important;
     }
+
     .site-wrapper {
         display: none !important;
     }
+
     .site-wrapper .table-icon {
         display: none;
     }
+
     .smallNavBtn {
         display: block !important;
     }
+
     .navbar {
         display: none !important;
     }
+
     .smallNav .navbar-nav {
         display: block;
     }
+
     .swiper-caption {
         font-size: .6em !important;
     }
@@ -1118,28 +1128,36 @@ html {
     .heroSec .note h1 {
         font-size: 30px;
     }
+
     .heroSec .container p {
         font-size: 22px !important;
     }
+
     .skillSec {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
     .swiper-caption {
         font-size: 1em !important;
     }
+
     .skillSec .skillPer .perc {
         font-size: 10px !important;
     }
+
     .skillSec .skillPer .fillmult span {
         font-size: 18px !important;
     }
+
     .contact .section-header {
         font-size: 25px !important;
     }
+
     .contact .alt-send-button {
         padding: 0 !important;
     }
+
     .section-services .fa,
     .section-services .bi,
     .section-services .fa-solid,
@@ -1155,6 +1173,7 @@ html {
 /* Typing Effect Head */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 .heroSec .container {
     font-family: 'Montserrat', sans-serif;
     color: #eee;
@@ -1196,15 +1215,19 @@ html {
     0% {
         background-color: #ccc;
     }
+
     49% {
         background-color: #ccc;
     }
+
     50% {
         background-color: transparent;
     }
+
     99% {
         background-color: transparent;
     }
+
     100% {
         background-color: #ccc;
     }
@@ -1409,7 +1432,7 @@ html {
 .skillSec .skillPer .fillmult {
     height: 100%;
     width: 0;
-    background: linear-gradient( to bottom, rgb(36, 91, 173), rgb(13, 216, 216), rgb(0, 132, 255));
+    background: linear-gradient(to bottom, rgb(36, 91, 173), rgb(13, 216, 216), rgb(0, 132, 255));
     border-radius: 12px;
     line-height: 30px;
     display: flex;
@@ -2153,6 +2176,7 @@ html {
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
@@ -2166,6 +2190,7 @@ html {
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
