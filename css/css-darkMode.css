@@ -62,12 +62,13 @@ body.dark .cursor-outer.cursor-hover {
     opacity: 0
 }
 
+body.dark h3.all_titles_clr_chnge,
 body.dark .soh_topbar .menu .links ul li.current a {
-    color: #FF8C00;
+    color: #4169e1;
 }
 
 body.dark .soh_topbar .topbar_inner .logo svg {
-    color: #fff;
+    color: #4169e1;
 }
 
 body.dark .soh_settings .icon {
@@ -126,11 +127,11 @@ body.dark .soh_topbar .menu .links ul li a:hover {
 }
 
 body.dark .soh_hero .content_inner h3 {
-    color: #fff
+    color: #4169e1
 }
 
 body.dark .soh_hero .content_inner h3.stroke {
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #4169e1;
     color: transparent
 }
 
@@ -162,8 +163,8 @@ body.dark .soh_about .about_inner .left {
 
 body.dark .soh_about .about_inner .left .thumbnail {
     display: block;
-    border-left: 8px solid white;
-    border-top: 8px solid white;
+    border-left: 8px solid #4169e1;
+    border-top: 8px solid #4169e1;
 }
 
 body.dark .soh_about .about_inner .left .thumbnail_2 {
@@ -171,14 +172,14 @@ body.dark .soh_about .about_inner .left .thumbnail_2 {
 }
 
 body.dark .soh_button a {
-    border-color: #fff;
-    background-color: #fff;
+    border-color: #4169e1;
+    background-color: #4169e1;
     color: #000
 }
 
 body.dark .soh_button a:hover {
     background-color: transparent;
-    color: #fff
+    color: #4169e1
 }
 
 body.dark .soh_skills .about_title h3 {

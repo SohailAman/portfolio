@@ -12,11 +12,11 @@
     <meta property="og:title" content="Sohail Aman- Front-End Developer">
     <meta name="robots" content="index, max-image-preview:large">
     <meta property="og:site_name" content="Sohail Aman">
-    <meta property="og:image" content="./images/favIco.png">
+    <meta property="og:image" content="./images/favIco.svg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <!-- favIco -->
-    <link rel="shortcut icon" href="./images/favIco.png">
+    <link rel="shortcut icon" href="./images/favIco.svg">
     <!-- CSS Link -->
     <link rel="stylesheet" type="text/css" href="css/css-plugins.css">
     <link rel="stylesheet" type="text/css" href="css/css-colors.css">
@@ -28,6 +28,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--Bootstrap Icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
 
@@ -674,7 +676,7 @@
                 <!-- Inner Cards -->
                 <div class="portfolio_inner pb-5">
                     <ul class="gallery_zoom">
-                        <li class="landingPage">
+                        <li class="px-3 landingPage">
                             <a target="_blank" href="https://sohailaman.github.io/Bondcap.com/"
                                 class="text-decoration-none">
                                 <div class="list_inner">
@@ -689,7 +691,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="landingPage">
+                        <li class="px-3 landingPage">
                             <a target="_blank" href="https://sohailaman.github.io/PSD-CONVERSION/"
                                 class="text-decoration-none">
                                 <div class="list_inner">
@@ -703,7 +705,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dashboard">
+                        <li class="px-3 dashboard">
                             <a target="_blank" href="https://sohailaman.github.io/Dashboard/"
                                 class="text-decoration-none">
                                 <div class="list_inner">
@@ -717,7 +719,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="todoList">
+                        <li class="px-3 todoList">
                             <a target="_blank" href="https://sohailaman.github.io/Todo-List/"
                                 class="text-decoration-none">
                                 <div class="list_inner">
@@ -731,7 +733,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="image">
+                        <li class="px-3 image">
                             <div class="list_inner">
                                 <div class="image">
                                     <img src="././images/portImg1.png" draggable="false" alt="Load Error">
@@ -742,7 +744,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="image">
+                        <li class="px-3 image">
                             <div class="list_inner">
                                 <div class="image">
                                     <img src="././images/portImg3.png" draggable="false" alt="Load Error">
@@ -760,19 +762,25 @@
         <!-- Portifolio End -->
 
         <!-- Services -->
-        <div class="soh_services" id="services">
+        <div class="soh_services pb-5" id="services">
             <div class="container">
-                <div class="soh_main_title">
+                <div class="soh_main_title mb-5">
                     <div class="title">
                         <h3 class="all_titles_clr_chnge">What Can I Do<span class="bg">SERVICES</span></h3>
+                    </div>
+                    <div class="swiper-button-next all_titles_clr_chnge">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                    <div class="swiper-button-prev all_titles_clr_chnge">
+                        <i class="bi bi-arrow-left"></i>
                     </div>
                 </div>
                 <!-- Swiper -->
                 <div class="swiper mySwiper mb-5">
-                    <div class="swiper-wrapper mb-5 d-flex align-items-center">
+                    <div class="swiper-wrapper mb-5">
                         <div class="swiper-slide">
-                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
-                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                            <div class="swiper_inner">
+                                <div class="text_inner">
                                     <div class="txt_cont">
                                         <h3>HTML & CSS Responsive Web Design</h3>
                                         <p class="serv_desc">
@@ -781,14 +789,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="serv_svg col-5 d-flex justify-content-center">
-                                    <img src="./images/HTML-Des.png" width="90%" draggable="false" alt="Load Error">
+                                <div class="serv_svg d-flex justify-content-center">
+                                    <img src="./images/HTML-Des.png" width="80%" draggable="false" alt="Load Error">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
-                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                            <div class="swiper_inner">
+                                <div class="text_inner">
                                     <div class="txt_cont">
                                         <h3>PSD to Bootstrap</h3>
                                         <p class="serv_desc">
@@ -797,14 +805,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="serv_svg col-5 d-flex justify-content-center">
-                                    <img src="./images/boot-des.png" width="90%" draggable="false" alt="Load Error">
+                                <div class="serv_svg d-flex justify-content-center">
+                                    <img src="./images/boot-des.png" width="80%" draggable="false" alt="Load Error">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
-                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                            <div class="swiper_inner">
+                                <div class="text_inner">
                                     <div class="txt_cont">
                                         <h3>Javascript Development</h3>
                                         <p class="serv_desc">
@@ -812,14 +820,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="serv_svg col-5 d-flex justify-content-center">
-                                    <img src="./images/JS-dev.png" width="90%" draggable="false" alt="Load Error">
+                                <div class="serv_svg d-flex justify-content-center">
+                                    <img src="./images/JS-dev.png" width="80%" draggable="false" alt="Load Error">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
-                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                            <div class="swiper_inner">
+                                <div class="text_inner">
                                     <div class="txt_cont">
                                         <h3>React JS Development</h3>
                                         <p class="serv_desc">
@@ -828,14 +836,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="serv_svg col-5 d-flex justify-content-center">
-                                    <img src="./images/react-js.png" width="90%" draggable="false" alt="Load Error">
+                                <div class="serv_svg d-flex justify-content-center">
+                                    <img src="./images/react-js.png" width="80%" draggable="false" alt="Load Error">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper_inner row mx-0 justify-content-center align-items-center">
-                                <div class="text_inner col-6 d-flex align-items-center justify-content-center text-end">
+                            <div class="swiper_inner">
+                                <div class="text_inner">
                                     <div class="txt_cont">
                                         <h3>UI/UX Design</h3>
                                         <p class="serv_desc">
@@ -845,15 +853,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="serv_svg col-5 d-flex justify-content-center">
-                                    <img src="./images/UI-UX.png" width="90%" draggable="false" alt="Load Error">
+                                <div class="serv_svg d-flex justify-content-center">
+                                    <img src="./images/UI-UX.png" width="80%" draggable="false" alt="Load Error">
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next all_titles_clr_chnge"></div>
-                        <div class="swiper-button-prev all_titles_clr_chnge"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <!-- Swiper -->
             </div>

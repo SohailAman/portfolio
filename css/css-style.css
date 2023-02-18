@@ -1274,7 +1274,6 @@ body.dark .soh_portfolio .list_inner {
     margin: 0 0 40px;
     float: left;
     width: 33.3333%;
-    padding-left: 50px
 }
 
 .soh_portfolio .portfolio_inner ul li .list_inner {
@@ -1383,27 +1382,53 @@ body.dark .soh_portfolio .list_inner {
     float: left;
 }
 
+.soh_services .swiper_inner {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+.soh_services .swiper_inner .serv_svg {
+    width: 220px;
+}
+
 .soh_services .swiper {
     overflow: visible !important;
 }
 
+.soh_services .swiper-button-prev:after,
+.soh_services .swiper-button-next:after {
+    content: none;
+}
+
 .soh_services .swiper-pagination.swiper-pagination-bullets {
-    bottom: 0;
-    left: 47%;
+    bottom: -55px;
 }
 
 .soh_services .swiper-pagination .swiper-pagination-bullet {
-    background-color: #3a00ff !important;
-    width: 10px !important;
-    height: 10px !important;
+    background-color: #eee !important;
+    width: 14px !important;
+    height: 14px !important;
+    opacity: 1;
+    transition: all .2s;
 }
 
-.soh_services .swiper-slide {
-    opacity: 0 !important;
+.soh_services .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    border: 3px solid #fff;
+    width: 18px !important;
+    height: 18px !important;
+    transition: all .2s;
 }
 
-.soh_services .swiper-slide-active {
-    opacity: 1 !important;
+.soh_services .swiper-button-prev,
+.soh_services .swiper-button-next {
+    font-size: 23px;
 }
 
 .soh_services .swiper-button-next:hover {
@@ -1415,7 +1440,7 @@ body.dark .soh_portfolio .list_inner {
 .soh_services .swiper-button-next {
     right: 30px !important;
     transition: .4s;
-    top: -30px;
+    top: 20px;
 }
 
 .soh_services .swiper-button-prev:hover {
@@ -1425,10 +1450,10 @@ body.dark .soh_portfolio .list_inner {
 }
 
 .soh_services .swiper-button-prev {
-    right: 30px !important;
+    right: 74px !important;
     transition: .4s;
     left: auto !important;
-    top: -60px;
+    top: 20px;
 }
 
 .swiper-button-next:after,
@@ -2451,6 +2476,10 @@ body.dark .soh_settings .cursor li .svg,
         width: 25px;
         height: 25px
     }
+
+    .soh_services .swiper_inner {
+        min-height: 55vh;
+    }
 }
 
 @media(max-width:1040px) {
@@ -2578,6 +2607,10 @@ body.dark .soh_settings .cursor li .svg,
         position: relative
     }
 
+    .soh_services .swiper_inner {
+        min-height: 60vh;
+    }
+
     .soh_news .news_inner ul li {
         width: 50%
     }
@@ -2664,7 +2697,7 @@ body.dark .soh_settings .cursor li .svg,
     }
 }
 
-@media (max-width:520px) {
+@media (max-width:640px) {
     .soh_about .social .svg {
         width: 30px !important;
         height: 30px !important;
@@ -2672,6 +2705,10 @@ body.dark .soh_settings .cursor li .svg,
 
     .soh_about .social h5 {
         font-size: 20px !important;
+    }
+
+    .soh_services .swiper_inner {
+        min-height: 55vh;
     }
 }
 
@@ -2699,9 +2736,6 @@ body.dark .soh_settings .cursor li .svg,
         padding: 0;
     }
 
-    .soh_services .swiper_inner {
-        align-items: flex-start !important;
-    }
 
     .soh_services .serv_svg.col-5,
     .soh_services .swiper_inner .col-6 {
