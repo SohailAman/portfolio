@@ -467,6 +467,15 @@ section .container {
 }
 
 /*---------------------------- Interests------------------------------------------*/
+a.downloadBtn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 12px 20px;
+  background: var(--soh-transparent-2);
+  transition: ease-in-out 0.3s;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -475,6 +484,7 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 
+a.downloadBtn i,
 .interests .icon-box i {
   font-size: 32px;
   padding-right: 10px;
@@ -490,6 +500,7 @@ section .container {
   color: var(--soh-white);
 }
 
+a.downloadBtn:hover,
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
