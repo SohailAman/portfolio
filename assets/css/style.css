@@ -6,7 +6,7 @@
   --soh-text-header: rgba(255, 255, 255, 0.8);
   --soh-a-bg: rgba(255, 255, 255, 0.1);
   --soh-transparent: rgba(255, 255, 255, 0.2);
-  --soh-transparent-2: rgba(255, 255, 255, 0.08)
+  --soh-transparent-2: rgba(255, 255, 255, 0.08);
 }
 
 /*---------------------General Styles----------------------*/
@@ -21,7 +21,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: linear-gradient(to right, #00000030, #000000ab), url(../img/bg.jpg) no-repeat;
+  background: linear-gradient(to right, #00000030, #000000ab),
+    url(../img/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center left;
   left: 0;
@@ -34,6 +35,11 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
+  }
+}
+@media (min-width: 768px) {
+  body::before {
+    background-position: center;
   }
 }
 
@@ -210,7 +216,7 @@ h6 {
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
@@ -249,7 +255,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -258,7 +264,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: var(--soh-white);
 }
 
@@ -323,7 +329,7 @@ h6 {
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
@@ -430,7 +436,6 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
 
 /*---------------------------- Skills------------------------------------------*/
 .skills .progress {
@@ -663,7 +668,6 @@ a.downloadBtn:hover,
   margin-bottom: 0;
 }
 
-
 .services .icon-box:hover .icon {
   background: var(--soh-white);
 }
@@ -791,7 +795,7 @@ a.downloadBtn:hover,
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: var(--soh-white)fff;
+  color: var(--soh-white) fff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -876,7 +880,7 @@ a.downloadBtn:hover,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -971,7 +975,7 @@ a.downloadBtn:hover,
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1040,7 +1044,7 @@ a.downloadBtn:hover,
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--soh-theme);
   border: 0;
   padding: 10px 30px;
@@ -1049,7 +1053,7 @@ a.downloadBtn:hover,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #15bb62;
 }
 
@@ -1108,7 +1112,7 @@ a.downloadBtn:hover,
 .preloader.hide {
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .preloader {
@@ -1121,7 +1125,7 @@ a.downloadBtn:hover,
   height: 100vh;
   background: #222;
   z-index: 999;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @-webkit-keyframes outerRotate1 {
