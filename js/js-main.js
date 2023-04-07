@@ -35,7 +35,6 @@ $window.on("load", (function () {
     $("#overlayer").delay(500).fadeOut('slow');
     $(".loader").delay(1000).fadeOut('slow');
     portfolioIsotop();
-    headerSticTky();
     ChangeColor();
     scrollToAnchor();
 }));
@@ -49,6 +48,20 @@ $window.on('scroll', function () {
 /*-----------------------------------------------------------------------------
                                    FUNCTIONS
 -----------------------------------------------------------------------------*/
+
+
+$("a").click(function (event) {
+    event.preventDefault();
+    var href = $(this).attr('href');
+    var target = $(this).attr('target');
+    if (target === '_blank') {
+        window.open(href, '_blank');
+    } else {
+        window.location.href = href;
+    }
+});
+
+
 
 
 /*-------------------------
@@ -198,7 +211,6 @@ function bgBackground() {
         list[i].style.backgroundColor = "" + color + "";
     }
 }
-
 
 
 function colorFull() {
