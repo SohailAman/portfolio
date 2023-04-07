@@ -2653,6 +2653,7 @@ canvas.particles-js-canvas-el {
 -----------------------------*/
 
 @media (prefers-color-scheme: dark) {
+  #overlayer,
   .page-hero {
     background-color: #2b2b2b;
   }
