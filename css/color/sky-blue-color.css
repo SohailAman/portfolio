@@ -1,0 +1,117 @@
+/*-----------------------------------------------------------
+* Template Name    : Sohail - Fully Responsive Personal Template
+* Author           : Retrina Group
+* Version          : 1.0.0
+* Created          : June 2020
+* File Description : Color sass file of the template
+*------------------------------------------------------------*/
+::selection {
+  background: rgba(12, 192, 222, 0.3);
+}
+
+::-moz-selection {
+  background: rgba(12, 192, 222, 0.3);
+}
+
+.base-color {
+  color: #0cc0de !important;
+}
+
+.hero-social li a:hover,
+.blog-link a:hover {
+  color: #0cacc9 !important;
+}
+
+.bg-base-color {
+  background-color: #0cc0de !important;
+}
+
+.follow-label:before,
+.skill-box .fill-skillbar,
+.timeline-area:before,
+.testimonial .testimonial-border,
+.blog-content:before,
+.blog .owl-dot.active span {
+  background: #0cc0de;
+}
+
+.testimonial .owl-dot.active span {
+  background: #0cc0de !important;
+}
+
+.menu li a,
+.pill-button,
+header .navbar-brand span,
+header .navbar-brand b,
+.pill-button:hover,
+.ability ul li:before,
+.timeline-icon,
+.timeline-year,
+.language-skill ul li i,
+.contact .form-item .form-control,
+.comments .comment-info a,
+.portfolio .portfolio-icon a,
+.portfolio .portfolio-icon a:first-child,
+.blog-content button:hover,
+.comments .comment-info a:hover,
+.social a:hover {
+  color: #0cc0de;
+}
+
+.loader {
+  border-top: 4px solid #0cc0de !important;
+}
+
+.timeline-icon {
+  border: 1px solid #0cc0de;
+  background-color: #0cc0de;
+}
+
+.portfolio .portfolio-item-content::before {
+  background-color: rgba(12, 192, 222, 0.9);
+}
+
+.menu-toggler span {
+  background-color: #0cc0de;
+}
+
+.timeline-item:before {
+  border: 2px solid #0cc0de;
+}
+
+.timeline-item:before {
+  border: 1px solid #0cc0de;
+}
+
+.header nav .nav-pills a.active {
+  color: #0cc0de !important;
+}
+
+.header nav a:hover {
+  color: #0cc0de !important;
+}
+
+.testimonial .testimonial-item::before {
+  color: #0cc0de;
+}
+
+/*-------------------------
+      Flat Demo
+-------------------------*/
+.flat-demo .button-border,
+.Sohail-dark.flat-demo .button-border {
+  background-color: #0cc0de;
+}
+
+.flat-demo .pill-button:hover,
+.flat-demo .pill-button.active {
+  background-color: #0cacc9;
+}
+
+.Sohail-dark .hero-social li a:hover {
+  color: #0cacc9 !important;
+}
+
+.Sohail-dark .header nav a:hover {
+  color: #0cacc9 !important;
+}
