@@ -2015,6 +2015,12 @@ canvas.particles-js-canvas-el {
   .navbar.navbar-expand-md .navbar-collapse {
     top: 9vh;
   }
+  .main-head {
+    font-size: 2em;
+  }
+  .sub-head-main {
+    font-size: 2em;
+  }
   .social-box {
     position: initial;
     right: 1rem;
