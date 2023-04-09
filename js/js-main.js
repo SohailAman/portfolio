@@ -50,7 +50,7 @@ $window.on('scroll', function () {
 -----------------------------------------------------------------------------*/
 
 
-$("a").click(function (event) {
+$(".ancor").click(function (event) {
     event.preventDefault();
     var href = $(this).attr('href');
     var target = $(this).attr('target');
@@ -514,7 +514,8 @@ function portfolioPopup() {
   Testimonial CAROUSEL JS
 -------------------------*/
 function clientCarousel() {
-    $(".testimonial .owl-carousel").owlCarousel({
+    var owl = $(".testimonial .owl-carousel");
+    owl.owlCarousel({
         loop: true,
         margin: 30,
         stagePadding: 5,
@@ -535,10 +536,20 @@ function clientCarousel() {
                 items: 2,
                 nav: false,
             },
+        },
+    });
 
+    // Handle mousewheel events for the owl-carousel
+    owl.on("mousewheel", ".owl-stage", function (e) {
+        if (e.deltaY > 0) {
+            owl.trigger("next.owl");
+        } else {
+            owl.trigger("prev.owl");
         }
+        e.preventDefault();
     });
 }
+
 
 /*-------------------------
     POST SIDEBAR TOGGLER
