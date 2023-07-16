@@ -16,7 +16,6 @@ function updateColorSchemeClasses() {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    body.classList.remove("flat-demo");
     body.classList.add("Sohail-dark");
   }
   // If prefers-color-scheme is light or no preference
