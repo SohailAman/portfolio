@@ -2013,7 +2013,7 @@ canvas.particles-js-canvas-el {
 
 @media (max-width: 767px) {
   .navbar.navbar-expand-md .navbar-collapse {
-    top: 9vh;
+    top: 10vh;
   }
   .main-head {
     font-size: 2em;
@@ -2059,9 +2059,12 @@ canvas.particles-js-canvas-el {
   .navbar {
     padding: 0;
   }
-  /* .navbar .navbar-collapse .navbar-nav{
-    
-  } */
+  .services .services-content {
+    padding-left: 0;
+  }
+  .services .services-item {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2321,6 +2324,10 @@ canvas.particles-js-canvas-el {
   display: none;
 }
 
+.flat-demo .portfolio-filter {
+  overflow-x: auto;
+  width: min-content;
+}
 .flat-demo .testimonial .owl-carousel .testimonial-image,
 .flat-demo .portfolio-filter .button-border {
   background-color: transparent;
@@ -2442,7 +2449,7 @@ canvas.particles-js-canvas-el {
 -------------------------*/
 .navbar-expand-md .navbar-collapse {
   position: fixed;
-  right: 2px;
+  right: 3px;
   top: 15vh;
   transition: all 0.4s;
 }
@@ -2457,7 +2464,6 @@ canvas.particles-js-canvas-el {
   color: #ffffff !important;
 }
 .navbar-toggler {
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -2499,8 +2505,8 @@ canvas.particles-js-canvas-el {
   margin: 0;
 }
 .navbar-expand-md .navbar-collapse.collapse:not(.show) {
-  /* display: block; */
-  /* right: -10vw; */
+  display: block;
+  right: -10vw;
   transition: all 0.3s;
 }
 .navbar-expand-md .navbar-collapse .navbar-nav .nav-link.active,
