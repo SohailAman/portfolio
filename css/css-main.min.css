@@ -637,10 +637,6 @@ button {
 .hero {
   overflow-x: hidden !important;
 }
-.hero .hero-item{
-    position: relative;
-    z-index: 999;
-}
 .hero .personal-item h1 {
   font-size: 2rem !important;
 }
