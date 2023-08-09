@@ -1799,17 +1799,13 @@ canvas.particles-js-canvas-el {
 .flat-demo .comments-devider {
   height: 1px;
 }
-  .return-to-top{
-display :none;
-  }
+  
 /* media */
 @media (max-width: 1199px) {
   #bmc-wbtn{
     display: none !important;
   }
-  .return-to-top{
-display :block;
-  }
+
   .post-sidebar-toggle {
     transform: none;
     transition: none;
