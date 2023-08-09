@@ -1802,6 +1802,9 @@ canvas.particles-js-canvas-el {
 
 /* media */
 @media (max-width: 1199px) {
+  #bmc-wbtn{
+    display: none;
+  }
   .post-sidebar-toggle {
     transform: none;
     transition: none;
