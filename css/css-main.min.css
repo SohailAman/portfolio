@@ -2329,7 +2329,10 @@ canvas.particles-js-canvas-el {
 }
 
 .flat-demo .portfolio-filter {
-  overflow-x: auto;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: flex-start;
   width: min-content;
 }
 .flat-demo .testimonial .owl-carousel .testimonial-image,
