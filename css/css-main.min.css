@@ -1447,6 +1447,7 @@ canvas.particles-js-canvas-el {
 
 .portfolio .portfolio-filter li a {
   padding: 5px 15px;
+    text-wrap: nowrap;
 }
 
 .portfolio .portfolio-item {
