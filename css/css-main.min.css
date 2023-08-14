@@ -2336,6 +2336,10 @@ canvas.particles-js-canvas-el {
     align-items: flex-start;
   width: min-content;
 }
+.flat-demo .portfolio-filter::-webkit-scrollbar {
+    display: none; 
+}
+
 .flat-demo .testimonial .owl-carousel .testimonial-image,
 .flat-demo .portfolio-filter .button-border {
   background-color: transparent;
