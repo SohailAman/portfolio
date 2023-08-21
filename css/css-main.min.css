@@ -2083,7 +2083,7 @@ canvas.particles-js-canvas-el {
     top: 120px;
     bottom: 120px;
     left: 42px;
-    animation: circlereverse 22s linear infinite;
+    animation: circlereversemd 22s linear infinite;
   }
 .hero-03 .floating{
     width:40px;
