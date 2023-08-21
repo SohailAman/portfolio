@@ -2018,6 +2018,10 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 767px) {
+  .header, .flat-demo .header{
+    backdrop-filter: blur(6px);
+    background: #2c2d3085;
+  }
   .navbar.navbar-expand-md .navbar-collapse {
     top: 10vh;
   }
