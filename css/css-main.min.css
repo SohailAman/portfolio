@@ -2073,6 +2073,8 @@ canvas.particles-js-canvas-el {
   .hero-03 .circle-2{
     width:45px;
     height: 45px;
+    top: 120px;
+    bottom: 120px;
   }
 .hero-03 .floating{
     width:40px;
