@@ -2066,6 +2066,18 @@ canvas.particles-js-canvas-el {
     padding-right: 0;
     padding-left: 0;
   }
+  .hero-03 .circle{
+    width: 70px;
+    height: 70px;
+  }
+  .hero-03 .circle-2{
+    width:45px;
+    height: 45px;
+  }
+.hero-03 .floating{
+    width:40px;
+    height: 40px;
+  }
   .navbar {
     padding: 0;
   }
