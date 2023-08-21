@@ -2016,7 +2016,14 @@ canvas.particles-js-canvas-el {
     border-radius: 1rem 0 0 1rem;
   }
 }
-
+@keyframes circlereversemd {
+  0% {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(-120px) rotate(360deg);
+  }
+}
 @media (max-width: 767px) {
   .header.header-sticky, .flat-demo .header.header-sticky{
     backdrop-filter: blur(6px);
@@ -2075,6 +2082,8 @@ canvas.particles-js-canvas-el {
     height: 45px;
     top: 120px;
     bottom: 120px;
+    left: 42px;
+    animation: circlereverse 22s linear infinite;
   }
 .hero-03 .floating{
     width:40px;
