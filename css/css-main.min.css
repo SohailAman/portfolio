@@ -2018,7 +2018,7 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 767px) {
-  .header, .flat-demo .header{
+  .header.header-sticky, .flat-demo .header.header-sticky{
     backdrop-filter: blur(6px);
     background: #2c2d3085;
   }
