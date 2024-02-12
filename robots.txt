@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://vibecoder.netlify.app/sitemap.xml
