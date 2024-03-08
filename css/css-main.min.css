@@ -1399,17 +1399,6 @@ canvas.particles-js-canvas-el {
   position: relative;
   overflow: visible !important;
 }
-.skill-box .skillbar-bar .skillbar-head {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  z-index: 1;
-  background-color: inherit;
-  border: 2px solid #ffffff;
-}
 .skill-box .skill-bar-percent {
   position: absolute;
   font-weight: 500;
@@ -1448,7 +1437,7 @@ canvas.particles-js-canvas-el {
 
 .portfolio .portfolio-filter li a {
   padding: 5px 15px;
-    text-wrap: nowrap;
+  text-wrap: nowrap;
 }
 
 .portfolio .portfolio-item {
@@ -1801,10 +1790,10 @@ canvas.particles-js-canvas-el {
 .flat-demo .comments-devider {
   height: 1px;
 }
-  
+
 /* media */
 @media (max-width: 1199px) {
-  #bmc-wbtn{
+  #bmc-wbtn {
     display: none !important;
   }
 
@@ -2025,7 +2014,8 @@ canvas.particles-js-canvas-el {
   }
 }
 @media (max-width: 767px) {
-  .header.header-sticky, .flat-demo .header.header-sticky{
+  .header.header-sticky,
+  .flat-demo .header.header-sticky {
     backdrop-filter: blur(6px);
     background: #2c2d3085;
   }
@@ -2073,20 +2063,20 @@ canvas.particles-js-canvas-el {
     padding-right: 0;
     padding-left: 0;
   }
-  .hero-03 .circle{
+  .hero-03 .circle {
     width: 70px;
     height: 70px;
   }
-  .hero-03 .circle-2{
-    width:45px;
+  .hero-03 .circle-2 {
+    width: 45px;
     height: 45px;
     top: 120px;
     bottom: 120px;
     left: 42px;
     animation: circlereversemd 22s linear infinite;
   }
-.hero-03 .floating{
-    width:40px;
+  .hero-03 .floating {
+    width: 40px;
     height: 40px;
   }
   .navbar {
@@ -2358,14 +2348,14 @@ canvas.particles-js-canvas-el {
 }
 
 .flat-demo .portfolio-filter {
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: flex-start;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: flex-start;
   width: min-content;
 }
 .flat-demo .portfolio-filter::-webkit-scrollbar {
-    display: none; 
+  display: none;
 }
 
 .flat-demo .testimonial .owl-carousel .testimonial-image,
