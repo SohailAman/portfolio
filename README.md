@@ -20,4 +20,4 @@ This portfolio showcases my skills, projects, and experience as a senior fronten
 - Bootstrap
 - typed-js (for type animation)
 - isotopes Icons and fontawesome (for icons)
-- Netlify (for deployment)
+- Netlify & GHpages (for deployment)
