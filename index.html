@@ -97,17 +97,11 @@
       <link rel="stylesheet" href="css/css-LineIcons.min.css" />
     </noscript>
 
-    <!-- Owl Carousel Css -->
+    <!-- swiper Css -->
     <link
-      rel="preload"
-      href="css/css-owl.carousel.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <noscript>
-      <link rel="stylesheet" href="css/css-owl.carousel.min.css" />
-    </noscript>
 
     <!-- Colors Css -->
     <link
@@ -722,40 +716,13 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <!--   Portfolio Filters   -->
-          <ul
-            id="portfolio-filter"
-            class="list-unstyled list-inline mb-0 col-md-12 portfolio-filter"
-          >
-            <li class="button-border list-inline-item">
-              <a href="#" data-filter="*" class="pill-button active">All</a>
-            </li>
-            <li class="button-border list-inline-item">
-              <a href="#" data-filter=".website" class="pill-button">Website</a>
-            </li>
-            <li class="button-border list-inline-item">
-              <a href="#" data-filter=".land" class="pill-button"
-                >Landing Page</a
-              >
-            </li>
-            <li class="button-border list-inline-item">
-              <a href="#" data-filter=".dashboard" class="pill-button"
-                >Dashboard</a
-              >
-            </li>
-            <li class="button-border list-inline-item">
-              <a href="#" data-filter=".app" class="pill-button">Web App</a>
-            </li>
-          </ul>
-        </div>
         <div class="portfolio-items row">
           <!-- Item -->
           <div class="col-lg-4 col-md-6 portfolio-item land website">
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-1.png"
+                  src="images/portfolio/portfolio-1-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -778,7 +745,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-2.png"
+                  src="images/portfolio/portfolio-2-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -801,7 +768,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-3.png"
+                  src="images/portfolio/portfolio-3-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -820,7 +787,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-5.jpg"
+                  src="images/portfolio/portfolio-5-min.jpg"
                   alt="/"
                   class="img-fluid"
                 />
@@ -843,7 +810,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-4.jpg"
+                  src="images/portfolio/portfolio-4-min.jpg"
                   alt="/"
                   class="img-fluid"
                 />
@@ -866,7 +833,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-6.png"
+                  src="images/portfolio/portfolio-6-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -889,7 +856,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-7.jpg"
+                  src="images/portfolio/portfolio-7-min.jpg"
                   alt="/"
                   class="img-fluid"
                 />
@@ -908,7 +875,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-10.png"
+                  src="images/portfolio/portfolio-10-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -931,7 +898,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-9.png"
+                  src="images/portfolio/portfolio-9-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -954,7 +921,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-11.png"
+                  src="images/portfolio/portfolio-11-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -977,7 +944,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-8.jpg"
+                  src="images/portfolio/portfolio-8-min.jpg"
                   alt="/"
                   class="img-fluid"
                 />
@@ -1000,7 +967,7 @@
             <div class="image-border">
               <div class="portfolio-item-content">
                 <img
-                  src="images/portfolio/portfolio-12.png"
+                  src="images/portfolio/portfolio-12-min.png"
                   alt="/"
                   class="img-fluid"
                 />
@@ -1036,115 +1003,123 @@
             </div>
           </div>
         </div>
-        <div class="owl-carousel">
-          <!-- Testimonial Item-01 -->
-          <div class="testimonial-item box-border">
-            <div class="testimonial-header">
-              <div class="image-border">
-                <img src="images/test-dum.png" alt="/" />
-              </div>
-              <div class="testimonial-detail">
-                <span class="d-block font-weight-bold">Davud Gurda</span>
-                <small class="text-muted"> ~Upwork</small>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Testimonial Item-01 -->
+            <div class="swiper-slide testimonial-item box-border">
+              <div class="testimonial-header">
+                <div class="image-border">
+                  <img src="images/test-dum.png" alt="/" />
+                </div>
+                <div class="testimonial-detail">
+                  <span class="d-block font-weight-bold">Davud Gurda</span>
+                  <small class="text-muted"> ~Upwork</small>
 
-                <div class="stars mt-2">
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
+                  <div class="stars mt-2">
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                  </div>
                 </div>
               </div>
+              <p class="mb-0 text-muted">
+                " An absolute pleasure to work with Sohail. He developed a
+                website for my business that exceeded my expectations. From the
+                start, he was professional, knowledgeable, and responsive. He
+                took the time to understand my business needs and objectives and
+                provided expert guidance on the best approach to achieve them.
+                <br />
+                Overall, I highly recommend Sohail to anyone looking for a
+                skilled and dedicated website developer. Thank you for your
+                exceptional work! "
+              </p>
             </div>
-            <p class="mb-0 text-muted">
-              " An absolute pleasure to work with Sohail. He developed a website
-              for my business that exceeded my expectations. From the start, he
-              was professional, knowledgeable, and responsive. He took the time
-              to understand my business needs and objectives and provided expert
-              guidance on the best approach to achieve them. <br />
-              Overall, I highly recommend Sohail to anyone looking for a skilled
-              and dedicated website developer. Thank you for your exceptional
-              work! "
-            </p>
-          </div>
-          <!-- Testimonial Item-02 -->
-          <div class="testimonial-item box-border">
-            <div class="testimonial-header">
-              <div class="image-border">
-                <img src="images/test-dum.png" alt="/" />
-              </div>
-              <div class="testimonial-detail">
-                <span class="d-block font-weight-bold">Muhammad Nouman</span>
-                <small class="text-muted"> ~Upwork</small>
+            <!-- Testimonial Item-02 -->
+            <div class="swiper-slide testimonial-item box-border">
+              <div class="testimonial-header">
+                <div class="image-border">
+                  <img src="images/test-dum.png" alt="/" />
+                </div>
+                <div class="testimonial-detail">
+                  <span class="d-block font-weight-bold">Muhammad Nouman</span>
+                  <small class="text-muted"> ~Upwork</small>
 
-                <div class="stars mt-2">
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
+                  <div class="stars mt-2">
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                  </div>
                 </div>
               </div>
+              <p class="mb-0 text-muted">
+                " He performed excellent quality work and delivered it exactly
+                what I requested for!! Highly recommended for website
+                development related task!! A++++ "
+              </p>
             </div>
-            <p class="mb-0 text-muted">
-              " He performed excellent quality work and delivered it exactly
-              what I requested for!! Highly recommended for website development
-              related task!! A++++ "
-            </p>
-          </div>
-          <!-- Testimonial Item-03 -->
-          <div class="testimonial-item box-border">
-            <div class="testimonial-header">
-              <div class="image-border">
-                <img src="images/test-dum.png" alt="/" />
-              </div>
-              <div class="testimonial-detail">
-                <span class="d-block font-weight-bold">josyafr</span>
-                <small class="text-muted"> ~Fiverr</small>
+            <!-- Testimonial Item-03 -->
+            <div class="swiper-slide testimonial-item box-border">
+              <div class="testimonial-header">
+                <div class="image-border">
+                  <img src="images/test-dum.png" alt="/" />
+                </div>
+                <div class="testimonial-detail">
+                  <span class="d-block font-weight-bold">josyafr</span>
+                  <small class="text-muted"> ~Fiverr</small>
 
-                <div class="stars mt-2">
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
+                  <div class="stars mt-2">
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                  </div>
                 </div>
               </div>
+              <p class="mb-0 text-muted">
+                " very nice and humble developer he is a very nice front-end
+                developer with good communication and is the best seller I have
+                come across please hire him he is more talented than others...
+                he has the skills to do your projects.. a very nice person... i
+                will hire him again and again😎😎💖 "
+              </p>
             </div>
-            <p class="mb-0 text-muted">
-              " very nice and humble developer he is a very nice front-end
-              developer with good communication and is the best seller I have
-              come across please hire him he is more talented than others... he
-              has the skills to do your projects.. a very nice person... i will
-              hire him again and again😎😎💖 "
-            </p>
-          </div>
-          <!-- Testimonial Item-04 -->
-          <div class="testimonial-item box-border">
-            <div class="testimonial-header">
-              <div class="image-border">
-                <img src="images/test-dum.png" alt="/" />
-              </div>
-              <div class="testimonial-detail">
-                <span class="d-block font-weight-bold">web_agencyy</span>
-                <small class="text-muted"> ~Fiverr</small>
+            <!-- Testimonial Item-04 -->
+            <div class="swiper-slide testimonial-item box-border">
+              <div class="testimonial-header">
+                <div class="image-border">
+                  <img src="images/test-dum.png" alt="/" />
+                </div>
+                <div class="testimonial-detail">
+                  <span class="d-block font-weight-bold">web_agencyy</span>
+                  <small class="text-muted"> ~Fiverr</small>
 
-                <div class="stars mt-3">
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
-                  <i class="lni-star-filled size-xs star-color"></i>
+                  <div class="stars mt-3">
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                    <i class="lni-star-filled size-xs star-color"></i>
+                  </div>
                 </div>
               </div>
+              <p class="mb-0 text-muted">
+                " He is really a professional at what he does and I got more
+                than what I expected from his services. I Highly recommend him
+                &amp;This Seller provide professional work and I will definitely
+                use his services again and again-:) "
+              </p>
             </div>
-            <p class="mb-0 text-muted">
-              " He is really a professional at what he does and I got more than
-              what I expected from his services. I Highly recommend him
-              &amp;This Seller provide professional work and I will definitely
-              use his services again and again-:) "
-            </p>
           </div>
+
+          <!-- If we need pagination -->
+          <div
+            class="swiper-pagination d-flex justify-content-center position-static"
+          ></div>
         </div>
       </div>
     </section>
@@ -1292,7 +1267,12 @@
     <!-- End Options -->
 
     <!--  JQuery  -->
-    <script src="js/js-jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--  Bootstrap Js  -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
@@ -1305,13 +1285,29 @@
       crossorigin="anonymous"
     ></script>
     <!--  Easing Js  -->
-    <script src="js/js-jquery.easing.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--  Typed Js  -->
-    <script src="js/js-typed.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--  Isotope Js  -->
-    <script src="js/js-isotope.pkgd.min.js" async></script>
-    <!--  Owl Carousel Js  -->
-    <script src="js/js-owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--  Swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!--  Custom JS  -->
     <script src="js/js-main.min.js" defer></script>
 
@@ -1321,7 +1317,7 @@
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="sohailaman"
       data-description="Support me on Buy me a coffee!"
-      data-message=""
+      data-message="Make a change"
       data-color="#FF5F5F"
       data-position="Right"
       data-x_margin="18"

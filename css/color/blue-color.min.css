@@ -31,11 +31,11 @@
 .timeline-area:before,
 .testimonial .testimonial-border,
 .blog-content:before,
-.blog .owl-dot.active span {
+.blog .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #1b63ad;
 }
 
-.testimonial .owl-dot.active span {
+.testimonial .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #1b63ad !important;
 }
 

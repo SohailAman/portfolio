@@ -17,8 +17,7 @@
   color: #ddae3f !important;
 }
 
-.hero-social li a:hover,
-.blog-link a:hover {
+.hero-social li a:hover {
   color: #dba423 !important;
 }
 
@@ -29,13 +28,11 @@
 .follow-label:before,
 .skill-box .fill-skillbar,
 .timeline-area:before,
-.testimonial .testimonial-border,
-.blog-content:before,
-.blog .owl-dot.active span {
+.testimonial .testimonial-border {
   background: #ddae3f;
 }
 
-.testimonial .owl-dot.active span {
+.testimonial .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #ddae3f !important;
 }
 
@@ -52,7 +49,6 @@ header .navbar-brand b,
 .comments .comment-info a,
 .portfolio .portfolio-icon a,
 .portfolio .portfolio-icon a:first-child,
-.blog-content button:hover,
 .comments .comment-info a:hover,
 .social a:hover {
   color: #ddae3f;

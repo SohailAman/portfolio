@@ -1209,7 +1209,7 @@ canvas.particles-js-canvas-el {
 .testimonial-detail .stars i {
   color: rgb(236, 206, 36);
 }
-.testimonial .owl-carousel .testimonial-item {
+.testimonial .swiper .testimonial-item {
   padding: 30px;
 }
 
@@ -1222,21 +1222,17 @@ canvas.particles-js-canvas-el {
   top: 46px;
 }
 
-.testimonial .owl-carousel .testimonial-item img {
+.testimonial .swiper .testimonial-item img {
   width: 70px;
   display: inline-block;
   border-radius: 50%;
 }
 
-.testimonial .owl-carousel .testimonial-item:hover .testimonial-border {
+.testimonial .swiper .testimonial-item:hover .testimonial-border {
   width: 90px;
 }
 
-.testimonial .owl-carousel .owl-stage-outer {
-  padding: 1rem 0;
-}
-
-.testimonial .owl-carousel .testimonial-image {
+.testimonial .swiper .testimonial-image {
   position: relative;
   display: inline-block;
   border-radius: 50%;
@@ -1246,7 +1242,7 @@ canvas.particles-js-canvas-el {
   height: 115px;
 }
 
-.testimonial .owl-carousel .testimonial-image::before {
+.testimonial .swiper .testimonial-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1258,7 +1254,7 @@ canvas.particles-js-canvas-el {
   right: 6px;
 }
 
-.testimonial .owl-carousel .testimonial-image::after {
+.testimonial .swiper .testimonial-image::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1271,11 +1267,11 @@ canvas.particles-js-canvas-el {
   left: 2px;
 }
 
-.testimonial .owl-carousel .testimonial-image .img-thumbnail {
+.testimonial .swiper .testimonial-image .img-thumbnail {
   background-color: transparent;
 }
 
-.testimonial .owl-carousel .testimonial-image-border {
+.testimonial .swiper .testimonial-image-border {
   box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
   border-radius: 50%;
   padding: 5px;
@@ -1283,12 +1279,12 @@ canvas.particles-js-canvas-el {
   z-index: 2;
 }
 
-.testimonial .owl-carousel .owl-dots {
+.testimonial .swiper .swiper-pagination-bullets {
   text-align: center;
   margin-top: 1rem;
 }
 
-.testimonial .owl-carousel .owl-dot span {
+.testimonial .swiper .swiper-pagination-bullet {
   display: block;
   width: 24px;
   height: 5px;
@@ -1298,7 +1294,7 @@ canvas.particles-js-canvas-el {
   transition: all 0.3s ease;
 }
 
-.testimonial .owl-carousel .owl-dot.active span {
+.testimonial .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 32px;
   box-shadow: 3px 3px 8px rgba(55, 84, 170, 0.1), -3px -3px 8px white;
 }
@@ -2310,8 +2306,10 @@ canvas.particles-js-canvas-el {
 
 .flat-demo .pill-button:hover,
 .flat-demo .pill-button.active,
-.flat-demo .testimonial .owl-dot.active span,
-.flat-demo .testimonial .owl-carousel .testimonial-image-border {
+.flat-demo
+  .testimonial
+  .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.flat-demo .testimonial .swiper .testimonial-image-border {
   box-shadow: none;
 }
 
@@ -2342,8 +2340,8 @@ canvas.particles-js-canvas-el {
   box-shadow: 0px 0px 16px rgba(145, 145, 145, 0.2) !important;
 }
 
-.flat-demo .testimonial .owl-carousel .testimonial-image::after,
-.flat-demo .testimonial .owl-carousel .testimonial-image::before {
+.flat-demo .testimonial .swiper .testimonial-image::after,
+.flat-demo .testimonial .swiper .testimonial-image::before {
   display: none;
 }
 
@@ -2358,7 +2356,7 @@ canvas.particles-js-canvas-el {
   display: none;
 }
 
-.flat-demo .testimonial .owl-carousel .testimonial-image,
+.flat-demo .testimonial .swiper .testimonial-image,
 .flat-demo .portfolio-filter .button-border {
   background-color: transparent;
 }
@@ -2423,7 +2421,7 @@ canvas.particles-js-canvas-el {
 }
 
 .mono .bg-base-color,
-.mono .testimonial .owl-dot.active span {
+.mono .testimonial .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3c3c3c !important;
 }
 
@@ -2589,16 +2587,14 @@ canvas.particles-js-canvas-el {
 }
 
 .mono.Sohail-dark .skill-box .fill-skillbar,
-.mono.Sohail-dark .testimonial .owl-dot.active span {
+.mono.Sohail-dark
+  .testimonial
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #dedede;
 }
 
-.mono.Sohail-dark .testimonial .owl-carousel .owl-dot span {
+.mono.Sohail-dark .testimonial .swiper .swiper-pagination-bullet {
   background-color: #3c3c3c;
-}
-
-.mono.Sohail-dark .testimonial .owl-carousel .owl-dot.active span {
-  background-color: #dedede !important;
 }
 
 .mono.Sohail-dark .portfolio .portfolio-item-content::before {
@@ -2795,9 +2791,9 @@ canvas.particles-js-canvas-el {
     box-shadow: 3px 3px 3px #202125, -3px -3px 3px #3e3e3e;
   }
 
-  .testimonial .owl-carousel .testimonial-image::before,
+  .testimonial .swiper .testimonial-image::before,
   .skill-box .skillbar,
-  .testimonial .owl-carousel .testimonial-image,
+  .testimonial .swiper .testimonial-image,
   .portfolio-single .modal-content {
     background-color: #2c2d30;
   }
@@ -2820,17 +2816,20 @@ canvas.particles-js-canvas-el {
     box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #3e3e3e;
   }
 
-  .testimonial .owl-carousel .testimonial-image::after,
+  .testimonial .swiper .testimonial-image::after,
   .skill-box .skillbar {
     box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #3e3e3e;
   }
 
   .testimonial-image-border,
-  .testimonial .owl-carousel .testimonial-image-border {
+  .testimonial .swiper .testimonial-image-border {
     box-shadow: 3px 3px 3px #202125, -3px -3px 3px #3e3e3e;
   }
 
-  .testimonial .owl-carousel .owl-dot.active span {
+  .testimonial
+    .swiper
+    .swiper-pagination-bullet.swiper-pagination-bullet-active
+    span {
     box-shadow: -1px -1px 4px rgba(83, 83, 83, 0.4),
       1px 1px 4px rgba(0, 0, 0, 0.35);
   }
@@ -2964,15 +2963,22 @@ canvas.particles-js-canvas-el {
   }
 
   .mono .skill-box .fill-skillbar,
-  .mono .testimonial .owl-dot.active span {
+  .mono
+    .testimonial
+    .swiper-pagination-bullet.swiper-pagination-bullet-active
+    span {
     background-color: #dedede;
   }
 
-  .mono .testimonial .owl-carousel .owl-dot span {
+  .mono .testimonial .swiper .swiper-pagination-bullet {
     background-color: #3c3c3c;
   }
 
-  .mono .testimonial .owl-carousel .owl-dot.active span {
+  .mono
+    .testimonial
+    .swiper
+    .swiper-pagination-bullet.swiper-pagination-bullet-active
+    span {
     background-color: #dedede !important;
   }
 
